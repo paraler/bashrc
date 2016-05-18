@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile - Events</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+    </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0">
+    <style>
+        #content1 {
+            width:        99.9%;
+            height:       300px;
+            border-style: solid;
+            border-width: 1px;
+            overflow-y:   auto;
+        }
+    </style>
+    <script> 
+        $( document ).on( "scrollstart", function(){
+            $( "#content1" ).css( "background-color", "yellow" );
+        });
+        $( document ).on( "scrollstop", function(){
+            $( "#content1" ).css( "background-color", "white" );
+        });
+    </script>
+</head>
+<body>
+    <div id="home" data-role="page">
+        <div data-role="header" data-add-back-btn="true" 
+                data-back-btn-text="返回">
+            <h1>滚屏事件</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <div id="content1">
+                1 <br> 2 <br> 3 <br> 4 <br> 5 <br>
+                6 <br> 7 <br> 8 <br> 9 <br> 10<br>
+                11<br> 12<br> 13<br> 14<br> 15<br>
+                16<br> 17<br> 18<br> 19<br> 20<br>
+                21<br> 22<br> 23<br> 24<br> 25<br>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

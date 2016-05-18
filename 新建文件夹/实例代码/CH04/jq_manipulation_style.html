@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery - 网页动态处理 - Style</title>
+        <meta charset="utf-8" />
+        <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+        <style>
+            button.simple {
+                width:             30px;
+            }
+            button.multi {
+                width:             45px;
+            }
+            textarea {
+                width:             300px;
+                height:            100px;
+            }            
+        </style>
+        <script>
+            $(document).ready(function() {
+                $("#button_bold").click(function() {
+                    var fontWeight = $("textarea").css("font-weight");
+                    if ( fontWeight == 400 || fontWeight == "normal") {
+                        $("textarea").css("font-weight", "bolder");
+                    } else {
+                        $("textarea").css("font-weight", "normal");
+                    }
+                });
+                $("#button_italic").click(function() {
+                    var fontStyle = $("textarea").css("font-style");
+                    if ( fontStyle == "italic") {
+                        $("textarea").css("font-style", "");
+                    } else {
+                        $("textarea").css("font-style", "italic");
+                    }
+                });
+                $("#button_underline").click(function() {
+                    var textDecoration = $("textarea").css("text-decoration");
+                    alert(textDecoration);
+                    if ( textDecoration == "underline") {
+                        $( "textarea" ).css("text-decoration", "");
+                    } else {
+                        $( "textarea" ).css("text-decoration", "underline");
+                    }
+                });
+                $("#button_red_yellow").click(function() {
+                    $( "textarea" )
+                            .css({"color":"red", "background-color": "yellow"});
+                });
+                $("#button_normal").click(function() {
+                    $( "textarea" ).css({"color":"black"
+                                         , "background-color":"white"
+                                         , "font-weight":"normal"
+                                         , "font-style":"normal"
+                                         , "text-decoration":"none"});
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button id="button_bold" class="simple">B</button>
+        <button id="button_italic" class="simple">I</button>
+        <button id="button_underline" class="simple">U</button>
+        <button id="button_red_yellow" class="multi" 
+                style="color:red;background-color:yellow;">红</button>
+        <button id="button_normal" class="multi">正常</button>
+        <hr>
+        <textarea></textarea>
+    </body>
+</html>

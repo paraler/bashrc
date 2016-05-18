@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile - Events</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+    </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0">
+    <style>
+        .testArea {
+            width:            99.9%;
+            height:           100px;
+            border-style:     solid;
+            border-width:     1px;
+            background-color: #EEEEEE;
+        }
+        #infoArea {
+            font-size:        24px;
+        }
+    </style>
+    <script>
+        $(document).on("pagecreate", function(){
+            $( "#testArea1" ).on( "swipe", function(){
+                $( "#infoArea" ).text( "swipe" ).show().hide( 600 );
+            });
+            $( "#testArea2" ).on( "swipeleft", function(){
+                $( "#infoArea" ).text( "swipeleft" ).show().hide( 600 );
+            });
+            $( "#testArea2" ).on( "swiperight", function(){
+                $( "#infoArea" ).text( "swiperight" ).show().hide( 600 );
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="home" data-role="page">
+        <div data-role="header" data-add-back-btn="true" 
+                data-back-btn-text="返回">
+            <h1>滑动事件</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <div id="testArea1" class="testArea">水平测试区域</div>
+            <div id="testArea2" class="testArea">左右滑动测试区域</div>
+            <div id="infoArea"></div>
+        </div>
+    </div>
+</body>
+</html>

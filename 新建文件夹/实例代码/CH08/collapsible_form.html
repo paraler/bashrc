@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile - UI - Collapsible</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+    </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0">
+</head>
+<body>
+    <div data-role="page" data-theme="a">
+        <div data-role="header">
+            <h1>可收放的UI组件</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <form>
+                <fieldset data-role="collapsible">
+                    <legend>客户满意度调查</legend>
+                    <div data-role="controlgroup">
+                        <label for ="satis-5">非常满意</label>
+                        <input type="radio" id="satis-5" name="satis" 
+                                value="5">
+                        <label for ="satis-4">满意</label>
+                        <input type="radio" id="satis-4" name="satis" 
+                                value="4">
+                        <label for ="satis-5">一般</label>
+                        <input type="radio" id="satis-3" name="satis"
+                                value="3">
+                        <label for ="satis-2">不满意</label>
+                        <input type="radio" id="satis-2" name="satis"
+                                value="2">
+                        <label for ="satis-1">非常不满意</label>
+                        <input type="radio" id="satis-1" name="satis"
+                                value="1">
+                    </div>
+                    <label for ="comments">简短留言</label>
+                    <textarea id="comments" name="comments">
+                    </textarea>
+                    <a href="#" data-role="button" data-inline="true" >
+                            发送</a>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

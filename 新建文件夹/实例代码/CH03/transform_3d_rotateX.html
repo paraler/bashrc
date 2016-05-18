@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>3D Transforms - RotateX</title>
+        <style>
+            div {
+                width:              150px;
+                height:             100px;
+                background-color:   lightGray;
+                cursor:             pointer;
+            }
+            .rotateX30 {
+                -webkit-transform:  rotateX(30deg);
+                transform:          rotateX(30deg);
+            }
+            .rotateX60 {
+                -webkit-transform:  rotateX(60deg);
+                transform:          rotateX(60deg);
+            }
+            .rotateX150 {
+                -webkit-transform:  rotateX(150deg);
+                transform:          rotateX(150deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="obj" onclick="back()">CSS三维变换<br>演示</div>
+        <button onclick="rotateX30()">围绕X轴转30度</button>
+        <button onclick="rotateX60()">围绕X轴转60度</button>
+        <button onclick="rotateX150()">围绕X轴转150度</button>
+        <br>
+        <script>
+            var obj = document.getElementById("obj");
+            function back() {
+                obj.className = " ";
+            }
+            function rotateX30() {
+                obj.className = "rotateX30";
+            }
+            function rotateX60() {
+                obj.className = "rotateX60";
+            }
+            function rotateX150() {
+                obj.className = "rotateX150";
+            }
+        </script>
+    </body>
+</html>

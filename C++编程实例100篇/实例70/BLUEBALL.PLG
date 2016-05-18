@@ -1,0 +1,27 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: BLUEBALL - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\pengzhe\LOCALS~1\Temp\RSP23.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/BLUEBALL.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\学习\c++时尚编程百例\实例70\BLUEBALL.CPP"
+]
+Creating command line "cl.exe @C:\DOCUME~1\pengzhe\LOCALS~1\Temp\RSP23.tmp" 
+<h3>Output Window</h3>
+Compiling...
+BLUEBALL.CPP
+e:\学习\c++时尚编程百例\实例70\blueball.cpp(1) : fatal error C1083: Cannot open include file: 'graphics.h': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+BLUEBALL.OBJ - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

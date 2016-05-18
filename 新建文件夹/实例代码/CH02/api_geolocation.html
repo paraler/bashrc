@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5 API - geolocation</title>
+        <script>
+            function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation
+                            .getCurrentPosition(successCallback);
+                } else {
+                    resultDiv.innerHTML="无法使用Geolocation！";
+                }
+            }
+            function successCallback(position) {
+                result = "经度: " + position.coords.longitude 
+                        + "<br>纬度: " + position.coords.latitude
+                        + "<br>海拔: " + position.coords.altitude
+                        + "<br>精度: " + position.coords.accuracy
+                        + "<br>日期时间: " + position.timestamp;
+                resultDiv.innerHTML = result;
+            }
+        </script>
+    </head>
+
+    <body>
+        <button onclick="getLocation()">检测当前位置</button>
+        <div id="myLocation">&nbsp;</div>
+        <script>
+            var resultDiv = document.getElementById("myLocation");
+        </script>
+</body>
+</html>

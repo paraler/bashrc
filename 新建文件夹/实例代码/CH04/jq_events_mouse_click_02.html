@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Events - Click</title>
+        <meta charset="utf-8" />
+        <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+        <style>
+            img {
+                width:   200px;
+                height:  auto;
+            }
+            input {
+                width:   100px;
+            }
+        </style>
+        <script>
+            $(document).ready(function() {
+                $("form>*").click(function(event) {
+                    var targetId = event.target.id;
+                    $("#info").text(targetId + "被鼠标单击");
+                });
+            }); 
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="text" id="field1" name="field1" placeholder="field1" value="">
+            <input type="text" id="field2" name="field2" placeholder="field2" value="" > <br>
+            <img id="whale_img" src="images/whale_01.jpg" alt="鲸"> <br>
+            <input type="button" id="button1" name="button1" value="Button"> <br>
+        </form>
+        <input type="text" id="field3" name="field3" placeholder="field3" value=""> <br>
+        <hr>
+        <div id="info">状态提示...</div>
+    </body>
+</html>

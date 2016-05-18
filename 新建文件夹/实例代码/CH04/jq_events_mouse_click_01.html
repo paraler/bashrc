@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Events - Click</title>
+        <meta charset="utf-8" />
+        <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+        <style>
+            input[type='button'] {
+                width:   150px;
+            }
+        </style>
+        <script>
+            $(document).ready(function() {
+                $("#field1").click(function(event) {
+                    alert("jQuery");
+                });
+            });
+            
+            function clickHandler1() {
+                alert("JavaScript");
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" id="field1" name="field1" 
+                value="jQuery : click()" >
+        <br>
+        <input type="button" id="field2" name="field2" 
+                value="JavaScript : onclick()"
+                onclick="clickHandler1()" >
+    </body>
+</html>

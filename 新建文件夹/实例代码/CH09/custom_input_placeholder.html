@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile - UI组件定制</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+    </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0">
+    <style>
+        ::-webkit-input-placeholder {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div data-role="page" id="page1">
+        <div data-role="header">
+            <h1>文本输入（查询）</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <form>
+                <label for="mySearch">查询</label>
+                <input type="search" name="mySearch" id="mySearch" 
+                        placeholder="请输入订单号码..." data-clear-btn="true"/>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

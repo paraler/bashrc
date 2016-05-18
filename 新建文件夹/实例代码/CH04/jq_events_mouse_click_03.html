@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Events - Click</title>
+        <meta charset="utf-8" />
+        <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#start").click(function() {
+                    $("#field1").click().val("你好，jQuery!");
+                    setTimeout(function(){
+                        $("#button1").click();
+                    }, 2000);
+                });
+                // 
+                $("#field1").click(function() {
+                    $("#field1").css("background-color", "yellow");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <input type="text" id="field1" name="field1" value=""> <br>
+        <button id="button1" onclick="alert('发送按钮被单击')" >发送</button>
+        <br>
+        <button id="start">开始</button>
+    </body>
+</html>

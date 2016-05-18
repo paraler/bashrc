@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile - UI组件定制</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+    </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0">
+    <style>
+        .ui-grid-d {
+            text-align:        center;
+        }
+        .ui-grid-d>.ui-block-a, .ui-grid-d>.ui-block-e {
+            width:             15%;
+            background-color:  #F0F0F0;
+        }
+        .ui-grid-d>.ui-block-b, .ui-grid-d>.ui-block-d {
+            width:             20%;
+            background-color:  #E8E8E8;
+        }
+        .ui-grid-d>.ui-block-c {
+            width:             30%;
+            background-color:  #E0E0E0;
+        }
+    </style>
+</head>
+<body>
+    <div data-role="page" data-theme="a">
+        <div data-role="header">
+            <h1>网格</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <div class="ui-grid-d">
+                <div class="ui-block-a">一</div>
+                <div class="ui-block-b">二</div>
+                <div class="ui-block-c">三</div>
+                <div class="ui-block-d">四</div>
+                <div class="ui-block-e">五</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

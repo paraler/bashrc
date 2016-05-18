@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile - Events</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+    </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0">
+    <script> 
+        $(document).on("pagecreate", "#home", function(){
+            $("#errorPageLink").hide();
+        });
+        $(document).on("pagecontainerload",function(event, data){
+            alert("网页访问成功 ");
+        });
+        $(document).on("pagecontainerloadfailed",function(event, data){
+            $("#errorPageLink").trigger( "click" );
+        });
+    </script>
+</head>
+<body>
+    <div id="home" data-role="page">
+        <div data-role="header" data-add-back-btn="true" 
+                data-back-btn-text="返回">
+            <h1>主页</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <a href="external.html" data-role="button" data-mini="true" 
+                    data-inline="true">访问一个外部网页</a>
+            <a href="nothing.html" data-role="button" data-mini="true" 
+                    data-inline="true">访问一个不存在的网页</a>
+            <a href="#errorPage" id="errorPageLink">Error Page</a>
+        </div>
+    </div>
+    <div id="errorPage" data-role="page">
+        <div data-role="header" data-add-back-btn="true" 
+                data-back-btn-text="返回">
+            <h1>错误</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <div>网页访问失败！</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery events - Sliding</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#slideToggle").click(function() {
+                $("#whale").slideToggle({
+                    duration:  1000,
+                    start:  function() {
+                        $("#info").text(new Date().getTime() + " - 开始");
+                    },
+                    complete: function() {
+                        $("#info").text(new Date().getTime() + " - 完成");
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <input type="button" id="slideToggle" value="向下/向上滑动">
+    <br>
+    <div id="info">状态信息</div>
+    <hr>
+    <img id="whale" src="images/whale_01.jpg" alt="鲸" width="504" height="376">
+</body>
+</html>

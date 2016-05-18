@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery Selector - Type</title>
+        <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("div").css("background-color", "#EEEEEE");
+                $("span").css("background-color", "#AAAAAA");
+            });
+        </script>
+    </head>
+    <body>
+        <div>div 1</div>
+        <div>
+            div 2
+            <span>div 2 - span 1</span>
+        </div>
+        <div>
+            <span>div 3 - span 1</span>&nbsp;&nbsp;
+            <span>div 3 - span 2</span>
+        </div>
+    </body>
+</html>

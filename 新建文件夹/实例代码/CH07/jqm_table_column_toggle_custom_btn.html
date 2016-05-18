@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile - Column Toggle表格</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+    </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0">
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1>可选表列的表格</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <table data-role="table" data-mode="columntoggle" id="olympic" 
+                    data-column-btn-text="选择表列..." 
+                    data-column-btn-theme="b"
+                    class="ui-responsive" >
+                <thead>
+                    <tr>
+                        <th>年</th>
+                        <th data-priority="2">届</th>
+                        <th data-priority="1">城市</th>
+                        <th data-priority="3">主办国家</th>
+                        <th data-priority="1">金牌榜一</th>
+                        <th data-priority="2">金牌榜二</th>
+                        <th data-priority="2">金牌榜三</th>
+                        <th data-priority="3">金牌榜四</th>
+                        <th data-priority="3">金牌榜五</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2012</td><td>30</td><td>伦敦</td>
+                        <td>英国</td><td>美国</td><td>中国</td>
+                        <td>英国</td><td>俄罗斯</td><td>韩国</td>
+                    </tr>
+                    <tr>
+                        <td>2008</td><td>29</td><td>北京</td>
+                        <td>中国</td><td>中国</td><td>美国</td>
+                        <td>俄罗斯</td><td>英国</td><td>德国</td>
+                    </tr>
+                    <tr>
+                        <td>2004</td><td>28</td><td>雅典</td>
+                        <td>希腊</td><td>美国</td><td>中国</td>
+                        <td>俄罗斯</td><td>澳大利亚</td><td>日本</td>
+                    </tr>
+                    <tr>
+                        <td>2000</td><td>27</td><td>悉尼</td>
+                        <td>澳大利亚</td><td>美国</td><td>俄罗斯</td>
+                        <td>中国</td><td>澳大利亚</td><td>德国</td>
+                    </tr>
+                    <tr>
+                        <td>1996</td><td>26</td><td>亚特兰大</td>
+                        <td>美国</td><td>美国</td><td>俄罗斯</td>
+                        <td>德国</td><td>中国</td><td>法国</td>
+                    </tr>
+                    <tr>
+                        <td>1992</td><td>25</td><td>巴塞罗那</td>
+                        <td>西班牙</td><td>独联体</td><td>美国</td>
+                        <td>德国</td><td>中国</td><td>古巴</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

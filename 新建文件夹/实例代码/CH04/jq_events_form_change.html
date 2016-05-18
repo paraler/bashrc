@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Events - Form - change</title>
+        <meta charset="utf-8" />
+        <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $( "select" ).change(function() {
+                    $("#info1").text(new Date().getTime() + " - <select>下拉列表触发change()");
+                });
+                $( "input[type='checkbox']" ).change(function() {
+                    $("#info1").text(new Date().getTime() + " - 多选按钮触发change()");
+                });
+                $( "input[type='text']" ).change(function() {
+                    $("#info1").text(new Date().getTime() + " - 文本输入完成");
+                });
+                $( "input[type='text']" ).keypress(function() {
+                    $("#info2").text(new Date().getTime() + " - 字符输入完成");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <form>
+           <select>
+               <option>1</option>
+               <option>2</option>
+               <option>3</option>
+               <option>4</option>
+           </select>
+           <br>
+           选项 1: <input type="checkbox" name="choice" value="choice_v1"><br>
+           选项 2: <input type="checkbox" name="choice" value="choice_v2"><br>
+           选项 3: <input type="checkbox" name="choice" value="choice_v3">
+           <br>
+           <input type="text" ><br>
+           <div id="info1">表单事件 ..</div>
+           <div id="info2">键盘事件 ..</div>
+        </form>
+    </body>
+</html>

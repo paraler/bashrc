@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery - 网页动态处理 - before()</title>
+        <meta charset="utf-8" />
+        <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+        <script>
+            var n1 = '<img src="images/n1.jpg" alt="1">';
+            var n2 = '<img src="images/n2.jpg" alt="2">';
+            $(document).ready(function() {
+                $("#b1").click(function() {
+                    $("img:first").before(n1);
+                    //$(n1).insertBefore("img:first");
+                });
+                $("#b2").click(function() {
+                    $("img:first").before(n2);
+                    //$(n2).insertBefore("img:first");
+                });
+                $("#a1").click(function() {
+                    $("img:last").after(n1);
+                    //$(n1).insertAfter("img:last");
+                });
+                $("#a2").click(function() {
+                    $("img:last").after(n2);
+                    //$(n2).insertAfter("img:last");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        在队列之前插入图片：
+        <button id="b1">1</button>
+        <button id="b2">2</button><br>
+        在队列之后追加图片：
+        <button id="a1">1</button>
+        <button id="a2">2</button><br>
+        <hr>
+        <img src="images/n0.jpg" alt="0">
+    </body>
+</html>

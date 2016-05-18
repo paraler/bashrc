@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile - 导航</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+    </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0">
+    <style>
+        img {
+            width:      100%;
+            max-width:  1200px;
+            margin:     0;
+        }
+    </style>
+</head>
+<body>
+    <div id="home" data-role="page">
+        <div data-role="header" data-position="fixed"
+                data-tap-toggle="false" data-id="ca_travel">
+            <h1>加拿大旅游</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <ul data-role="listview">
+                <li><a href="#page1">多伦多</a></li>
+                <li><a href="#page2">尼亚加拉瀑布</a></li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed" 
+                data-tap-toggle="false" data-id="ca_travel_footer">
+            <h1>页尾</h1>
+        </div>
+    </div>
+    <div id="page1" data-role="page">
+        <div data-role="header" data-position="fixed"
+                data-tap-toggle="false" data-id="ca_travel">
+            <h1>加拿大旅游</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <img src="./images/toronto.jpg" alt="多伦多" >
+            <div>多伦多</div>
+            <a href="#home" data-role="button">返回主页</a>
+        </div>
+        <div data-role="footer" data-position="fixed" 
+                data-tap-toggle="false" data-id="ca_travel_footer">
+            <h1>页尾</h1>
+        </div>
+    </div>
+    <div id="page2" data-role="page">
+        <div data-role="header" data-position="fixed" 
+                data-tap-toggle="false" data-id="ca_travel">
+            <h1>加拿大旅游</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <img src="./images/niagara_fall.jpg" alt="尼亚加拉瀑布" >
+            <div>尼亚加拉瀑布</div>
+            <a href="#home" data-role="button">返回主页</a>
+        </div>
+        <div data-role="footer" data-position="fixed" 
+                data-tap-toggle="false" data-id="ca_travel_footer">
+            <h1>页尾</h1>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>背景自适应文本长度</title>
+<style>
+<!--
+
+html,body,ul,li {margin:0; padding:0; font-family:"微软雅黑"; font-size:12px; }
+ul,li {list-style-type:none;}
+.clear {clear:both;}
+#nav_out {background:url(img/nav_l.png) 0 0 no-repeat; line-height:70px; margin:50px auto; width:1000px;}
+#nav_in { background:url(img/nav_r.png) 100% 0 no-repeat; margin:0 0 0 12px;}
+#nav {height:70px; background:url(img/nav_c.png) 0 50% repeat-x; margin:0 22px 0 0;}
+#nav li {float:left;}
+#nav li a {display:block; text-decoration:none; color:#333333; text-decoration:none;}
+#nav li a:hover {background:url(img/li_l.png) 0 0 no-repeat;}
+#nav li a span {padding:0 12px 0 0; margin:0 0 0 12px; display:block;}
+#nav li a:hover span {background:url(img/li_r.png) 100% 0 no-repeat; color:#D9D9D9;}
+p {width:1000px; margin:50px auto; line-height:200%; text-transform:capitalize; text-align:center; color:skyblue;}
+.current {background:url(img/li_l.png) 0 0 no-repeat;}/*鼠标点击时变换背景，方便JS获取样式*/
+.current span{background:url(img/li_r.png) 100% 0 no-repeat;color:#D9D9D9;}  /*鼠标点击时变换背景，方便JS获取样式*/
+
+-->
+</style>
+</head>
+
+<body>
+<script language="javascript">
+	function getBg(num){
+		for(var id = 0;id<=8;id++)
+		{
+			if(id==num)
+			{
+				document.getElementById("mynav"+id).className="current";
+			}
+			else
+			{
+				document.getElementById("mynav"+id).className="";
+			}
+		}
+	}
+</script>
+<div id="nav_out">
+	<div id="nav_in">
+		<div id="nav">
+    		<ul>
+        		<li><a href="#" onclick="javascript:getBg(0)" id="mynav0" class="current"><span>背</span></a></li>
+            	<li><a href="#" onclick="javascript:getBg(1)" id="mynav1"><span>背景</span></a></li>
+            	<li><a href="#" onclick="javascript:getBg(2)" id="mynav2"><span>背景自</span></a></li>
+            	<li><a href="#" onclick="javascript:getBg(3)" id="mynav3"><span>背景自适</span></a></li>
+            	<li><a href="#" onclick="javascript:getBg(4)" id="mynav4"><span>背景自适应</span></a></li>
+            	<li><a href="#" onclick="javascript:getBg(5)" id="mynav5"><span>背景自适应文</span></a></li>
+            	<li><a href="#" onclick="javascript:getBg(6)" id="mynav6"><span>背景自适应文本</span></a></li>
+            	<li><a href="#" onclick="javascript:getBg(7)" id="mynav7"><span>背景自适应文本长</span></a></li>
+            	<li><a href="#" onclick="javascript:getBg(8)" id="mynav8"><span>背景自适应文本长度</span></a></li>
+            	<div class="clear"></div>
+        	</ul>
+		</div>
+	</div>
+</div>
+<p>made by jacktomato<br />2010年10月17日<br />献给所有喜好网页面设计的朋友们</p>
+<!--
+   ┏━━━━━━━━━━━━━━━━━━━━━┓
+   ┃             源 码 爱 好 者               ┃
+   ┣━━━━━━━━━━━━━━━━━━━━━┫
+   ┃                                          ┃
+   ┃           提供源码发布与下载             ┃
+   ┃                                          ┃
+   ┃        http://sc.xueit.com           ┃
+   ┃                                          ┃
+   ┃            互助、分享、提高              ┃
+   ┗━━━━━━━━━━━━━━━━━━━━━┛
+-->
+</body>
+</html>

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+<script type="text/javascript" src="jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="jquery.nordz.heartBeat.js"></script>
+<script type="text/JavaScript"> 
+	$(document).ready(function(){
+		$("#beat").heartBeat(
+			{
+			delayBetweenAnimation:2000,  
+			delay:1000 
+			});
+	});
+	$(document).ready(function(){
+		$("#beat1").heartBeat(
+			{
+			delayBetweenAnimation:2000,  
+			delay:1000 
+			});
+		setTimeout(function(){
+			$("#beat2").heartBeat(
+				{
+				delayBetweenAnimation:2000,  
+				delay:1000 
+				});
+		}, 200);
+		setTimeout(function(){
+			$("#beat3").heartBeat(
+				{
+				delayBetweenAnimation:2000,  
+				delay:1000 
+				});
+		}, 500);
+	});
+</script>
+</head>
+<body>
+<div id="beat1" style="float:left;margin-left:5px;background-color:#AABBCC; width:10px; height:10px;"></div>
+<div id="beat2" style="float:left;margin-left:5px;background-color:#AABBCC; width:20px; height:20px;"></div>
+<div id="beat3" style="float:left;margin-left:5px;background-color:#AABBCC; width:30px; height:30px;"></div>
+</body>
+</html>

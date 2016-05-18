@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile - custom transition</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+            </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet" />
+    <link href="custom-transition/custom-transition.css" 
+            rel="stylesheet"/>
+    <meta content="width=device-width, initial-scale=1.0" 
+            name="viewport">
+    <style>
+        .pNum {
+            font-size:    48px;
+            text-align:   center;
+        }
+    </style>
+    
+</head>
+<body>
+    <div data-role="page" id="p1" data-theme="a">
+        <div data-role="header">
+            <h1>第一页</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <div class="pNum">1</div>
+            <div>
+                <a href="#p2" data-role="button" 
+                        data-transition="effect01">第二页</a>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="p2" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" 
+                data-back-btn-text="返回">
+            <h1>第二页</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <div class="pNum">2</div>
+        </div>
+    </div>
+</body>
+</html>

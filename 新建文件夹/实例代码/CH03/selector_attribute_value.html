@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Selector - attribute</title>
+        <style>
+            div[data-hello] {
+                color:             red;
+            }
+            div[data-hello=hello] {
+                font-weight:       bolder;
+            }
+            div[data-hello~=hello] {
+                font-style:        italic;
+            }
+            div[data-hello|=你好] {
+                text-decoration:   underline;
+            }
+        </style>
+    </head>
+    <body>
+        <div data-greeings="hello">Greetings</div>
+        <div data-hello="greetings">你好 hello</div>
+        <div data-hello="hello">Hello</div>
+        <div data-hello="你好">你好</div>
+        <div data-hello="hello 你好">你好 hello</div>
+    </body>
+</html>

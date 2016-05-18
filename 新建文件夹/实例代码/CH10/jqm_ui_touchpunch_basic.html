@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile -UI组件扩展</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+            </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet" />
+    <link href="custom-icon-1/custom-icon-01.css" 
+            rel="stylesheet" />
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="js/TouchPunch/jquery.ui.touch-punch.min.js"></script>
+    <meta content="width=device-width, initial-scale=1.0" 
+            name="viewport" >
+    <style>
+        .drag_container {
+            width:              100%;
+            height:             450px;
+            max-height:         80%;
+        }
+        #draggable {
+            width:              100px;
+            height:             30px;
+            text-align:         center;
+            background-color:   yellow;
+        }
+    </style>
+    <script>
+        $( document ).on( "pageinit", "#p1", function( event ) {
+            $( "#draggable" ).draggable();
+        });
+    </script>
+</head>
+<body>
+    <div data-role="page" id="p1" data-theme="a">
+        <div data-role="header">
+            <h1>Touch Punch</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <div class="drag_container">
+                <div id="draggable">
+                    拖动测试
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

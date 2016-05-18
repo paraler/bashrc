@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile 插件</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+    </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet" />      
+    <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0">
+    <!-- windows (mDialog) 系统文件 -->
+    <script src="plugins/windows/js/jqm-windows.mdialog.js"></script>
+    <!-- mDialog:Button -->
+    <script>
+    $(document).on("tap", "#myDialog", function(){
+        $("<div>").mdialog({
+            useMenuMode:    true,
+            menuButtonType: 'button',
+            popDismissable: false,
+            closeButton:    true,
+            menuHeaderText: '按钮样式',
+            menuSubtitle:   '请选择?',
+            menuMinWidth:   '300px',
+            buttons: {
+                '同意': {
+                    click: function () { 
+                        $("#result").text("你提交的结果是：同意");
+                    }
+                },
+                '反对': {
+                    click: function () { 
+                        $("#result").text("你提交的结果是：反对");
+                    },
+                    icon: "delete",
+                    theme: "b",
+                }
+            }
+        });
+    });
+    </script>
+</head>
+<body>
+    <div data-role="page" id="mDialogDemo1">
+        <div data-role="header">
+            <h1>Windows (mDialog:Button)</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <a href="#" id="myDialog" data-role="button">
+                打开对话窗口
+            </a>
+            <div id="result">你提交的结果是：...</div>
+        </div>
+    </div>
+</body>
+</html>

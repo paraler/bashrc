@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>2D Transforms</title>
+        <style>
+            div {
+                width:              150px;
+                height:             100px;
+                background-color:   lightGray;
+                cursor:             pointer;
+            }
+            .translateRight {
+                -webkit-transform: translate(150px,0px);
+                transform: translate(150px,0px);
+            }
+            .rotate30 {
+                -webkit-transform: rotate(30deg);
+                transform: rotate(30deg);
+            }
+            .rotate45 {
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+            .rotateM60 {
+                -webkit-transform: rotate(-60deg);
+                transform: rotate(-60deg);
+            }
+            .scale80Percent {
+                -webkit-transform: scale(0.9,0.9);
+                transform: scale(0.9,0.9);
+            }
+            .scaleDoubleWidth {
+                -webkit-transform: scale(2,1);
+                transform: scale(2,1);
+            }
+            .skew {
+                -webkit-transform: skew(40deg,10deg);
+                transform: skew(40deg,10deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="obj" onclick="back()">CSS二维变换</div>
+        <button onclick="translateRight()">右移</button>
+        <br>
+        <button onclick="rotate30()">旋转30度</button>
+        <button onclick="rotate45()">旋转45度</button>
+        <button onclick="rotateM60()">旋转-60度</button>
+        <br>
+        <button onclick="scale80Percent()">缩小20%</button>
+        <button onclick="scaleDoubleWidth()">宽度加倍</button>
+        <br>
+        <button onclick="skew()">倾斜</button>
+        <script>
+            var obj = document.getElementById("obj");
+            function back() {
+                obj.className = " ";
+            }
+            function translateRight() {
+                obj.className = "translateRight";
+            }
+            function rotate30() {
+                obj.className = "rotate30";
+            }
+            function rotate45() {
+                obj.className = "rotate45";
+            }
+            function rotateM60() {
+                obj.className = "rotateM60";
+            }
+            function scale80Percent() {
+                obj.className = "scale80Percent";
+            }
+            function scaleDoubleWidth() {
+                obj.className = "scaleDoubleWidth";
+            }
+            function skew() {
+                obj.className = "skew";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile - Events</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+    </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0">
+    <style>
+        .myContent {
+            font-style:    normal;
+        }
+    </style>
+    <script>
+        $( document ).on("pagecreate", "#page2", function(event){
+            $( ".myContent" ).css( "font-style", "italic" );
+        });
+        $( document ).on("pagecreate", "#page3", function(event){
+            $( ".myContent" ).css( "font-size", "300%" );
+        });
+    </script>
+</head>
+<body>
+    <div id="home" data-role="page">
+        <div data-role="header" data-add-back-btn="true" 
+                data-back-btn-text="返回">
+            <h1>主页</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <a href="#page2" data-role="button" data-mini="true" 
+                    data-inline="true">按钮：第二页</a>
+            <a href="#page3" data-role="button" data-mini="true" 
+                    data-inline="true">按钮：第三页</a>
+        </div>
+    </div>
+    <div id="page2" data-role="page">
+        <div data-role="header" data-add-back-btn="true" 
+                data-back-btn-text="返回">
+            <h1>第二页</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <div class="myContent">第二页内容</div>
+        </div>
+    </div>
+    <div id="page3" data-role="page">
+        <div data-role="header" data-add-back-btn="true" 
+                data-back-btn-text="返回">
+            <h1>第三页</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <div class="myContent">第三页内容</div>
+        </div>
+    </div>
+</body>
+</html>

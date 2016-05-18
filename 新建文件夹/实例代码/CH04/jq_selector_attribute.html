@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery Selector - Type</title>
+        <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("input[required]").css("background-color", "yellow");
+            });
+        </script>
+    </head>
+    <body>
+        <form name="register" method="post" action="#">
+            <label for="customer">顾客：</label>
+            <input name="customer" id="customer" required><br>
+            <label for="email">电子邮件：</label>
+            <input name="email" id="email" required><br>
+            <label for="phone">电话：</label>
+            <input name="phone" id="phone" required><br>
+            <label for="address">地址：</label>
+            <input name="address" id="address"><br>
+            <input type="submit" value="注册">
+        </form>
+    </body>
+</html>

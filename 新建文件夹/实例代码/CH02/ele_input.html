@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>元素 - input</title>
+        <script>
+            function showWeight(packageWeight) {
+                document.getElementById("showWeight").innerHTML=packageWeight;
+            }
+        </script>
+    </head>
+
+    <body>
+        <form method="post" action="#">
+            <label for="username">用户名</label>
+            <input type="text" name="username" id="username" size="8" maxlength="7"><br>
+            <label for="password">密码</label>
+            <input type="password" name="password" id="password" ><br>
+            <label for="diliveryPostalRegular">送货方式-平邮</label>
+            <input type="radio" name="delivery" id="diliveryPostalRegular" ><br>
+            <label for="diliveryExpress">送货方式-快递</label>
+            <input type="radio" name="delivery" id="diliveryExpress" ><br>
+            <label for="diliveryInsurance">货运服务-保险</label>
+            <input type="checkbox" name="deliveryService" id="diliveryInsurance" ><br>
+            <label for="diliveryEvening">货运服务-晚间投递</label>
+            <input type="checkbox" name="deliveryService" id="diliveryEvening" ><br>
+            <label for="pickupDate">预约取件日期</label>
+            <input type="date" name="pickupDate" id="pickupDate" ><br>
+            <label for="pickupTime">预约取件时间</label>
+            <input type="time" name="pickupTime" id="pickupTime" ><br>
+            <span id="showWeight"></span>&nbsp;&nbsp;
+            <label for="favColor">选择包装颜色</label>
+            <input type="color" name="favColor" id="favColor"><br>
+            <label for="quantity">包裹数量</label>
+            <input type="number" name="quantity" id="quantity" min="1" max="5"><br>
+            <label for="phone">电话</label>
+            <input type="tel" name="phone" id="phone" ><br>
+            <label for="email">电子邮件</label>
+            <input type="email" name="email" id="email" ><br>
+            <label for="website">公司网站</label>
+            <input type="url" name="website" id="website" ><br>
+            <input type="hidden" name="hidden" value="hiddenField" >
+            <input type="button" name="agree" value="同意服务条款" >
+            <input type="image" src="images/no.png" alt="不同意服务条款">
+            <input type="reset" name="reset" value="重置" >
+            <input type="submit" name="login" value="登录" >
+        </form>
+    </body>
+</html>

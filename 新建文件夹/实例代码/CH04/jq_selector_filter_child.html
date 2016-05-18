@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery Selector - Child Filter</title>
+        <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+        <style>
+            div>div, span {
+                display:       block;
+                width:         60px;
+                float:         left;
+                border-style:  solid;
+                border-width:  1px;
+                text-align:    center;
+            }
+        </style>
+        <script>
+            $(document).ready(function() {
+                // 为父元素第一个子元素（<div>类型）和最后一个出现
+                // 的子元素（<span>类型）添加背景色
+                $( "#test1>div:first-child" ).css("background-color", "lightGreen");
+                $( "#test1>span:first-child" ).css("background-color", "red");
+                $( "#test1>span:last-of-type" ).css("background-color", "lightPink");
+                // 设置第一个子元素的背景色为浅蓝，
+                // 第三个<span>子元素的背景色为橄榄色
+                $( "#test2>div:nth-child(1)" ).css("background-color", "lightBlue");
+                $( "#test2>span:nth-of-type(3)" ).css("background-color", "olive");
+                // 设置索引值为偶数的<div>子元素的背景色为金黄色
+                $( "#test3>div:nth-child(even)" ).css("background-color", "gold");
+            });
+        </script>
+    </head>
+    <body>
+        <div id="test1">
+            <div>1-div</div><div>2-div</div><div>3-div</div>
+            <span>4-span</span><span>5-span</span><span>6-span</span>
+            <div>7-div</div><div>8-div</div><div>9-div</div>
+        </div>
+        <br><br>
+        <div id="test2">
+            <div>1-div</div><div>2-div</div><div>3-div</div>
+            <span>4-span</span><span>5-span</span><span>6-span</span>
+            <div>7-div</div><div>8-div</div><div>9-div</div>
+        </div>
+        <br><br>
+        <div id="test3">
+            <div>1-div</div><div>2-div</div><div>3-div</div>
+            <span>4-span</span><span>5-span</span><span>6-span</span>
+            <div>7-div</div><div>8-div</div><div>9-div</div>
+        </div>
+    </body>
+</html>

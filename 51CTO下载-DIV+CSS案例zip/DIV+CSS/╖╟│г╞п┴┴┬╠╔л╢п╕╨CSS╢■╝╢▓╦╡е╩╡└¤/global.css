@@ -1,0 +1,78 @@
+@charset "utf-8";
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,
+pre,a,abbr,acronym,address,big,cite,
+code,del,dfn,em,font,img,ins,kbd,
+q,s,samp,small,strike,strong,sub,
+sup,tt,var,dd,dl,dt,li,ol,ul,
+fieldset,form,label,legend,table,
+caption,tbody,tfoot,thead,tr,th,
+td { margin:0; padding:0; border:0; font-size:12px; font-family:arial, "宋体", Simsun, Microsoft YaHei, Arial Unicode MS, Mingliu, Arial, Helvetica; line-height:20px; }
+ul, ol { list-style:none; }
+table { border-collapse:collapse; border-spacing:0; }
+table,h1,h2,h3,h4,h5,
+h6 { font-size:100%; }
+/* 共用样式 */
+html { overflow-y:scroll;}
+body { color:#535353; }
+a { color:#535353; text-decoration:none; cursor:pointer!important; }
+a:hover { color:#EF5300; text-decoration:underline; }
+/* 头部 */
+.header .inner { position:relative; width:900px; height:152px; margin:0 auto; }
+.header .inner h1 { position:relative; top:13px; left:0; width:177px; height:52px; }
+.header .inner h1 span { display:block; height:52px; line-height:150px; overflow:hidden; }
+.header .inner h1 a { position:absolute; top:0; }
+.header .inner .message { position:absolute; top:5px; right:0px; z-index:100; height:20px; line-height:20px; padding-right:65px; color:#535353; }
+.header .inner .message a { color:#259301; text-decoration:underline; }
+.header .inner .message a:hover { color:#EF5300; text-decoration:none; }
+.header .inner .message span.online { margin-right:5px; }
+.header .inner .message a.login { padding-right:5px; }
+.header .inner .message a.message_center { margin:0 5px; }
+.header .inner .message a.help { margin-left:5px; padding:0 0 0 15px; background-color:#FFFFFF }
+.header .inner .message a.vip { position:absolute; top:1px; right:0; width:60px; height:17px; line-height:17px; line-height:21px\9; +line-height:19px;
+text-align:center; overflow:hidden; text-decoration:none; color:#FFF; }
+.header .inner .message a.vip:hover { color:#FFF; }
+.header .inner .nav { position:absolute; top:90px; left:45px; }
+.header .inner .nav a { float:left; height:27px; text-align:center; }
+.header .inner .nav a strong { display:block; width:86px; height:27px; line-height:27px; line-height:30px\9; font-weight:normal; font-size:14px; color:#FFFFFF; cursor:pointer; }
+.header .inner .nav a #nav_index { width:66px; }
+.header .inner .nav a #nav_privileg { width:100px; }
+.header .inner .nav strong.last { background:none; }
+.header .inner .nav a:hover { text-decoration:none; background:none; }
+.header .inner .nav a.current { position:relative; top:-1px; }
+.header .inner .nav a.current:hover { position:relative; top:-1px; background:none; }
+.header .inner .nav a.current strong { height:34px; line-height:36px; overflow:hidden; color:#6C7100; font-weight:bold; }
+.header .inner .sub_nav { position:absolute; top:126px; }
+.header .inner #sub_nav_01 { left:124px; }
+.header .inner #sub_nav_02 { left:209px;  }
+.header .inner #sub_nav_03 { left:310px; }
+.header .inner .sub_nav a { margin-right:15px; }
+.header .inner .sub_nav a.current { color:#6C7100; font-weight:bold; }
+.header .inner a.return { position:absolute; right:0; top:90px; width:91px; height:26px; line-height:26px; line-height:28px\9; +line-height:28px;
+text-align:center; color:#FFFFFF; }
+.header .inner a.return:hover { text-decoration:none; color:#FFFFFF; }
+/* 背景图 */
+.header,.header .inner .nav strong { background:url(bg_repeat.png) repeat-x; }
+.header { background-position:0px 0px; }
+.header .inner .nav strong { background-repeat:no-repeat; background-position:right -370px; }
+.header .inner .nav a.current strong,
+.header .inner .nav a.current:hover strong,
+.header .inner .nav a.current #nav_index,
+.header .inner .nav a.current #nav_privileg,
+.header .inner .nav a.current:hover #nav_index,
+.header .inner .nav a.current:hover #nav_privileg,
+.header .inner a.return{ background:url(bg.png) no-repeat; }
+.header .inner .nav a.current strong { background-position:-220px -240px; }
+.header .inner .nav a.current:hover strong { background-position:-220px -240px; }
+.header .inner .nav a.current #nav_index { background-position:-480px -420px; }
+.header .inner .nav a.current #nav_privileg { background-position:-370px -420px; }
+.header .inner .nav a.current:hover #nav_index { background-position:-480px -420px; }
+.header .inner .nav a.current:hover #nav_privileg { background-position:-370px -420px; }
+.header .inner .message a.vip { background-position:-460px -310px; }
+.header .inner a.return { background-position:-220px -280px; }
+.header .inner .nav a:hover strong,
+.header .inner .nav a:hover #nav_index,
+.header .inner .nav a:hover #nav_privileg { background:url(nav_hover.png) no-repeat 0 -40px; }
+.header .inner .nav a:hover strong { background-position:0 -40px; }
+.header .inner .nav a:hover #nav_index { background-position:0 -0px; }
+.header .inner .nav a:hover #nav_privileg { background-position:0 -80px; }

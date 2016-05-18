@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery Events - Form - blur</title>
+        <meta charset="utf-8" />
+        <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $( "div#d1" ).focusout(function() {
+                    $("#info_div_focusout").text(new Date().getTime() + ' - <div id="d1"> : focusout');
+                });
+                $( "div#d2" ).blur(function() {
+                    $("#info_div_blur").text(new Date().getTime() + ' - <div id="d2"> : blur');
+                });
+                $( "input" ).blur(function(event) {
+                    var targetId = event.target.id;
+                    $("#info_input_blur").text(new Date().getTime() + ' - <input> : blur - ' + targetId);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="d1">
+            <input type="text" id="input1"><br>
+            <input type="text" id="input2"><br>
+        </div>
+        <div id="d2">
+            <input type="text" id="input3"><br>
+            <input type="text" id="input4"><br>
+        </div>
+        <p>&lt;div&gt;̬状态变化</p>
+        <div id="info_div_focusout"></div>
+        <div id="info_div_blur"></div>
+        <p>&lt;input&gt;̬状态变化</p>
+        <div id="info_input_blur"></div>
+    </body>
+</html>

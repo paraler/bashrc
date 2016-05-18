@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>很酷的jQuery车门滑动效果菜单 by sc.xueit.com</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="js/jquery.backgroundPosition.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#shutter1').css({backgroundPosition: '0px 0px'});
+		$('#shutter2').css({backgroundPosition: '0px 0px'});
+		$('#shutter3').css({backgroundPosition: '0px 0px'});
+		$('#shutter4').css({backgroundPosition: '0px 0px'});
+		$(".link").hover(function(){
+			  $(this).parent().animate({backgroundPosition: '(0px -100px)'}, 500 );
+			}, function() {
+			  $(this).parent().animate({backgroundPosition: '(0px 0px)'}, 500 );
+		}); 
+	 });
+</script>
+</head>
+<body>
+<ul id="menuback">
+  <li class="shutter" id="shutter1"><a class="link" href="http://sc.xueit.com/">Link 1</a></li>
+  <li class="shutter" id="shutter2"><a class="link" href="http://sc.xueit.com/">Link 2</a></li>
+  <li class="shutter" id="shutter3"><a class="link" href="http://sc.xueit.com/">Link 3</a></li>
+  <li class="shutter" id="shutter4"><a class="link" href="http://sc.xueit.com/">Link 4</a></li>
+</ul>
+<h3 align="center">&copy; sc.xueit.com</h3>
+</body>
+</html>

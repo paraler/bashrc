@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>使用CSS+jQuery实现的水平二级菜单 by sc.xueit.com</title>
+<style type="text/css">
+body {
+	font: 10px normal Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font: 4.7em normal Georgia, 'Times New Roman', Times, serif;
+	color: #333;
+	margin: 0;
+	padding: 5px 0;
+}
+h1 small{
+	font: 0.2em normal Verdana, Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	letter-spacing: 1.5em;
+	display: block;
+	color: #fff;
+}
+.container {width: 970px; margin: 0 auto;}
+ul#topnav {
+	margin: 0; padding: 0;
+	float: left;
+	width: 970px;
+	list-style: none;
+	position: relative;
+	font-size: 1.2em;
+	background: url(topnav_stretch.gif) repeat-x;
+}
+ul#topnav li {
+	float: left;
+	margin: 0; padding: 0;
+	border-right: 1px solid #555;
+}
+ul#topnav li a {
+	padding: 10px 15px;
+	display: block;
+	color: #f0f0f0;
+	text-decoration: none;
+}
+ul#topnav li:hover { background: #1376c9 url(topnav_active.gif) repeat-x; }
+ul#topnav li span {
+	float: left;
+	padding: 15px 0;
+	position: absolute;
+	left: 0; top:35px;
+	display: none;
+	width: 970px;
+	background: #1376c9;
+	color: #fff;
+	-moz-border-radius-bottomright: 5px;
+	-khtml-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-khtml-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+ul#topnav li:hover span { display: block; }
+ul#topnav li span a { display: inline; }
+ul#topnav li span a:hover {text-decoration: underline;}
+</style>
+<script type="text/javascript"
+src="jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	
+$("ul#topnav li").hover(function() { //Hover over event on list item
+	$(this).css({ 'background' : '#1376c9 url(topnav_active.gif) repeat-x'}); //Add background color + image on hovered list item
+	$(this).find("span").show(); //Show the subnav
+} , function() { //on hover out...
+	$(this).css({ 'background' : 'none'}); //Ditch the background
+	$(this).find("span").hide(); //Hide the subnav
+});
+	
+});
+</script>
+</head>
+
+<body>
+
+<div class="container">	
+	<h1>使用CSS+jQuery实现的水平二级菜单</h1>
+	<div style="clear: both; display: block; padding-bottom: 20px;"><a href="http://sc.xueit.com" style="color: #1376c9;"><h3>sc.xueit.com</h3></a></div>
+    <ul id="topnav">
+        <li><a href="http://sc.xueit.com/">Home</a></li>
+        <li>
+            <a href="http://sc.xueit.com/">About</a>
+            <span>
+                <a href="http://sc.xueit.com/">The Company</a> |
+                <a href="http://sc.xueit.com/">The Team</a> |
+                <a href="http://sc.xueit.com/">Careers</a>
+            </span>
+        </li>
+        <li>
+            <a href="http://sc.xueit.com/">Services</a>
+            <span>
+                <a href="http://sc.xueit.com/">What We Do</a> |
+                <a href="http://sc.xueit.com/">Our Process</a> |
+                <a href="http://sc.xueit.com/">Testimonials</a>
+            </span>
+        </li>
+        <li>
+            <a href="http://sc.xueit.com/">Portfolio</a>
+            <span>
+                <a href="http://sc.xueit.com/">Web Design</a> |
+                <a href="http://sc.xueit.com/">Development</a> |
+                <a href="http://sc.xueit.com/">Identity</a> |
+                <a href="http://sc.xueit.com/">SEO &amp; Internet Marketing</a> |
+                <a href="http://sc.xueit.com/">Print Design</a>
+            </span>
+        </li>
+        <li><a href="http://sc.xueit.com/">Contact</a></li>
+    </ul>
+	
+
+</div>
+
+</body>
+</html>

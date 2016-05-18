@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery Selector - Basic Filter</title>
+        <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+        <style>
+            div>div {
+                width:         60px;
+                float:         left;
+                border-style:  solid;
+                border-width:  1px;
+                text-align:    center;
+            }
+        </style>
+        <script>
+            $(document).ready(function() {
+                // 为第一个和最后一个元素添加背景色
+                $( "#test1>div:first" ).css("background-color", "lightGreen");
+                $( "#test1>div:last" ).css("background-color", "lightPink");
+                // 设置索引值为奇数的元素的背景色为浅蓝，
+                // 索引值为偶数的元素的背景色为橄榄色
+                $( "#test2>div:odd" ).css("background-color", "lightBlue");
+                $( "#test2>div:even" ).css("background-color", "olive");
+                // 为索引值大于3的元素添加背景色
+                $( "#test3>div:gt(3)" ).css("background-color", "gold");
+                // 设置<h1> - <h6>元素
+                $( ":header" ).css("color", "blue");
+            });
+        </script>
+    </head>
+    <body>
+        <h1>h1</h1>
+        <div id="test1">
+            <div>0</div><div>1</div><div>2</div><div>3</div><div>4</div>
+            <div>5</div><div>6</div><div>7</div><div>8</div><div>9</div>
+        </div>
+        <br>
+        <h2>h2</h2>
+        <div id="test2">
+            <div>0</div><div>1</div><div>2</div><div>3</div><div>4</div>
+            <div>5</div><div>6</div><div>7</div><div>8</div><div>9</div>
+        </div>
+        <br>
+        <h3>h3</h3>
+        <div id="test3">
+            <div>0</div><div>1</div><div>2</div><div>3</div><div>4</div>
+            <div>5</div><div>6</div><div>7</div><div>8</div><div>9</div>
+        </div>
+    </body>
+</html>

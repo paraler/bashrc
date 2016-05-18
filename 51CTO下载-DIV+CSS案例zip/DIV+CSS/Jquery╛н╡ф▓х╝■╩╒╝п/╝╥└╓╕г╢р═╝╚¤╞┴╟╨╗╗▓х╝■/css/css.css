@@ -1,0 +1,133 @@
+/* CSS Document */
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,form,img,dl,dt,dd,table,th,td,blockquote,fieldset,div,strong,label,em{margin:0;padding:0;border:0;}
+ul,ol,li{list-style:none;}
+input,button{margin:0;font-size:12px;vertical-align:middle;}
+body{font-size:12px;font-family:Arial, Helvetica, sans-serif; margin:0 auto;}
+table{border-collapse:collapse;border-spacing:0;}
+p{line-height:24px}
+/*download by http://www.codefans.net*/
+.clearfloat{height:0;font-size:1px;clear:both;line-height:0;}
+
+#container{ width:1000px; text-align:left; margin:0 auto; color:#9be3fc;}
+a{color:#333;text-decoration:none;}
+a:hover{color:#ef9b11; }
+
+
+.box{ margin:20px auto;}
+.module-title {
+	BACKGROUND: url(../images/index_spirit_title.gif) no-repeat -9999px 50%; POSITION: relative; HEIGHT: 35px
+}
+.module-title H3 {
+	BACKGROUND: url(../images/heading_left.png) no-repeat; TEXT-INDENT: -9999px
+}
+.module-title UL {
+	RIGHT: 10px; WIDTH: 135px; POSITION: absolute; TOP: 8px
+}
+.module-title LI {
+	FLOAT: left; MARGIN: 4px 9px 0px 0px; WIDTH: 12px; HEIGHT: 12px
+}
+.module-title LI.prev {
+	MARGIN: 0px 12px 0px 0px; WIDTH: 20px; HEIGHT: 20px
+}
+.module-title LI.next {
+	MARGIN: 0px 12px 0px 0px; WIDTH: 20px; HEIGHT: 20px
+}
+.module-title LI A {
+	DISPLAY: block; BACKGROUND: url(../images/module-title-nav-bg.gif) no-repeat -9999px 50%; OVERFLOW: hidden; WIDTH: 100%; CURSOR: pointer; COLOR: #ffffff; TEXT-INDENT: -9999px; HEIGHT: 100%
+}
+#sales-product .module-title LI.prev A {
+	BACKGROUND-POSITION: 0px 0px; HEIGHT: 20px
+}
+#sales-product .module-title LI.next A {
+	BACKGROUND-POSITION: -98px 0px; HEIGHT: 20px
+}
+#sales-product .module-title LI A {
+	BACKGROUND-POSITION: -35px -4px
+}
+#sales-product .module-title LI.current A {
+	BACKGROUND-POSITION: -56px -4px
+}
+#new-market .module-title LI.prev A {
+	BACKGROUND-POSITION: 0px -20px; HEIGHT: 20px
+}
+#new-market .module-title LI.next A {
+	BACKGROUND-POSITION: -98px -20px; HEIGHT: 20px
+}
+#new-market .module-title LI A {
+	BACKGROUND-POSITION: -35px -24px
+}
+#new-market .module-title LI.current A {
+	BACKGROUND-POSITION: -56px -24px
+}
+#saving-life .module-title LI.prev A {
+	BACKGROUND-POSITION: 0px -40px; HEIGHT: 20px
+}
+#saving-life .module-title LI.next A {
+	BACKGROUND-POSITION: -98px -40px; HEIGHT: 20px
+}
+#saving-life .module-title LI A {
+	BACKGROUND-POSITION: -35px -44px
+}
+#saving-life .module-title LI.current A {
+	BACKGROUND-POSITION: -56px -44px
+}
+#sales-product .module-title {
+	BACKGROUND-POSITION: 0px 0px
+}
+.sales-dm#sales-product .module-title {
+	BACKGROUND-POSITION: 0px -180px
+}
+#sales-dm .module-title {
+	BACKGROUND-POSITION: 0px -36px
+}
+#new-market .module-title {
+	BACKGROUND-POSITION: 0px -72px
+}
+#saving-life .module-title {
+	BACKGROUND-POSITION: 0px -108px
+}
+#function-tools .module-title {
+	BACKGROUND-POSITION: 0px -144px
+}
+#sales-product {
+	CLEAR: both; BACKGROUND: url(../images/index_product_bg.gif) no-repeat;  PADDING-BOTTOM: 39px; MARGIN:20px auto; WIDTH: 949px; _zoom: 1
+}
+#corner-product-main {
+	Z-INDEX: 1000; BACKGROUND: url(../images/product-pic-bottom.gif) no-repeat; MARGIN: 0px 0px 0px -13px; OVERFLOW: hidden; WIDTH: 975px; POSITION: absolute; HEIGHT: 40px
+}
+#sales-product-main {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; OVERFLOW: hidden; WIDTH: 948px; PADDING-TOP: 9px; POSITION: relative
+}
+#sales-product-main UL {
+	WIDTH: 4000px
+}
+#sales-product-main LI {
+	BORDER-RIGHT: #e2e2e2 1px solid; FLOAT: left; WIDTH: 237px; HEIGHT: 258px
+}
+#sales-product-main LI IMG {
+	DISPLAY: block; MARGIN: 0px auto
+}
+#sales-product-main LI {
+	FONT-SIZE: 14px; COLOR: #bf2833
+}
+#sales-product-main LI A {
+	FONT-SIZE: 14px; COLOR: #bf2833
+}
+#sales-product-main LI P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 15px; PADDING-BOTTOM: 0px; PADDING-TOP: 10px; TEXT-ALIGN: left
+}
+#sales-product-main LI P A {
+	DISPLAY: block; WIDTH: 208px
+}
+#sales-product-main LI SPAN {
+	FONT-SIZE: 35px; COLOR: #bf2833; LINE-HEIGHT: 35px; FONT-FAMILY: Arial,''
+}
+#sales-product-main LI A.a1 {
+	DISPLAY: block; MARGIN: 0px auto; VERTICAL-ALIGN: middle; WIDTH: 187px; HEIGHT: 178px; TEXT-ALIGN: center
+}
+#sales-product-main LI A.sales-product-pic SPAN {
+	DISPLAY: inline-block; VERTICAL-ALIGN: middle; WIDTH: 0px
+}
+#sales-product-main LI SPAN.price_symbol {
+	FONT-SIZE: 23px; LINE-HEIGHT: 20px
+}

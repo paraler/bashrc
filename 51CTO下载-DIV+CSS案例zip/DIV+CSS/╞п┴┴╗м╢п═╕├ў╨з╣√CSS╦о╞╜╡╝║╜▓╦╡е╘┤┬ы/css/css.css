@@ -1,0 +1,147 @@
+#fancymenu {
+	position: relative;
+	height: 29px;
+	width: 421px;
+	background: url('../images/bg.gif') no-repeat top;
+	padding: 15px;
+	margin: 10px 0;
+	overflow: hidden;
+}
+
+#pictureselect {
+	position: relative;
+	height: 1%; /* ie bug */
+}
+
+#fancymenu ul, #pictureselect {
+	padding: 0;
+	margin: 0;
+}
+
+/* Don't apply padding here (offsetWidth will differ in IE)
+    If you need padding add it to the child anchor */
+#fancymenu ul li, #pictureselect li {
+	float: left;
+	list-style: none;
+}
+
+#fancymenu ul li a, #pictureselect li a  {
+	text-indent: -500em;
+	z-index: 10;
+	display: block;
+	float: left;
+	height: 30px;
+	position: relative;
+	overflow: hidden;
+}
+
+#pictureselect li {
+	height: 54px;
+}
+
+#pictureselect li a {
+	height: 54px;
+	width: 62px;
+}
+
+#menu_home a {
+	width: 59px;
+	background: url('../images/menu_home.png') no-repeat center !important;	
+	background: url('../images/menu_home.gif') no-repeat center;
+}
+
+#menu_plantatree a {
+	width: 119px;
+	background: url('../images/menu_plantatree.png') no-repeat center !important;	
+	background: url('../images/menu_plantatree.gif') no-repeat center;
+}
+
+#menu_travel a {
+	width: 70px;
+	background: url('../images/menu_travel.png') no-repeat center !important;	
+	background: url('../images/menu_travel.gif') no-repeat center;
+}
+
+#menu_rideanelephant a {
+	width: 142px;
+	background: url('../images/menu_rideanelephant.png') no-repeat center !important;	
+	background: url('../images/menu_rideanelephant.gif') no-repeat center;
+}
+
+#nopicture a {
+	background: url('../images/no_picture.gif') no-repeat center;
+}
+
+#picture_1 a {
+	background: url('../images/picture_1.jpg') no-repeat center;
+}
+
+#picture_2 a {
+	background: url('../images/picture_2.jpg') no-repeat center;
+}
+
+#picture_3 a {
+	background: url('../images/picture_3.jpg') no-repeat center;
+}
+
+#picture_4 a {
+	background: url('../images/picture_4.jpg') no-repeat center;
+}
+
+#fancymenu li.background {
+	/*background: url('../images/bg_menu_right.png') no-repeat top right !important;*/
+	background: url('../images/bg_menu_right.gif') no-repeat top right;
+	z-index: 8;
+	position: absolute;
+	visibility: hidden;
+}
+
+#fancymenu .background .left {
+	/*background: url('../images/bg_menu.png') no-repeat top left !important;*/
+	background: url('../images/bg_menu.gif') no-repeat top left;
+	height: 30px;
+	margin-right: 9px; /* 7px is the width of the rounded shape */
+}
+
+#pictureselect li.background {
+	background: url('../images/bg_images.gif') no-repeat top;
+	z-index: 8;
+	position: absolute;
+	width: 53px;
+	visibility: hidden;
+}
+
+#pictureselect li.background .left { display: none; }
+
+#userprofile {
+	margin-top: 15px;
+	background: url('../images/bg_form.gif') no-repeat top left;
+	width: 360px;
+	height: 180px;
+	overflow: hidden;
+	padding: 0 15px;
+}
+
+#userprofile h4 {
+	font: bold 11px Verdana;
+	margin-bottom: 10px;
+}
+
+#userprofile p.input {
+	background: #EBEBEB;
+	overflow: hidden;
+	padding: 0 !important;
+	padding: 2px 0;
+}
+
+#userprofile p.input input {
+	display: block;
+	margin: 3px;
+	width: 348px;
+	border: 1px solid #D4D4D4;
+	padding: 3px 0 3px 4px;
+}
+
+#userprofile p.input input:focus {
+	border: 1px solid #999;
+}

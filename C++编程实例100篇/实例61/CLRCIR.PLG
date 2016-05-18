@@ -1,0 +1,27 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: CLRCIR - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\pengzhe\LOCALS~1\Temp\RSP2B.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/CLRCIR.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\学习\c++时尚编程百例\实例61\CLRCIR.CPP"
+]
+Creating command line "cl.exe @C:\DOCUME~1\pengzhe\LOCALS~1\Temp\RSP2B.tmp" 
+<h3>Output Window</h3>
+Compiling...
+CLRCIR.CPP
+e:\学习\c++时尚编程百例\实例61\clrcir.cpp(1) : fatal error C1083: Cannot open include file: 'graphics.h': No such file or directory
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+CLRCIR.OBJ - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

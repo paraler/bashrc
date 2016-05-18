@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile - UI - SelectMenu</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+    </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0">
+</head>
+<body>
+    <div data-role="page" data-theme="a">
+        <div data-role="header">
+            <h1>选择菜单</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <form target="#">
+            <fieldset data-role="controlgroup" data-type="horizontal">
+                <legend>中国->加拿大航班</legend>
+                <label for="origin">始发</label>
+                <select name="origin" id="origin">
+                    <option value="">出发地</option>
+                    <option value="PEK">北京首都国际机场</option>
+                    <option value="PVG">上海浦东国际机场</option>
+                    <option value="CAN">广州白云国际机场</option>
+                </select>
+                <label for="destination">到达</label>
+                <select name="destination" id="destination">
+                    <option value="">目的地</option>
+                    <option value="YYZ">多伦多皮尔逊国际机场</option>
+                    <option value="YVR">温哥华国际机场</option>
+                </select>
+                <label for="airline">航空公司</label>
+                <select name="airline" id="airline">
+                    <option value="">航空公司</option>
+                    <option value="AC">加拿大航空</option>
+                    <option value="×">其他...</option>
+                </select>
+            </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

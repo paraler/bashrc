@@ -1,0 +1,64 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: skyblue_PinTu - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/skyblue_PinTu.res" /d "_DEBUG" /d "_AFXDLL" "E:\VC game Program\成型游戏代码\拼图\skyblue_PinTu\skyblue_PinTu.rc"" 
+Creating temporary file "C:\DOCUME~1\skyblue\LOCALS~1\Temp\RSP97.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/skyblue_PinTu.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Microsoft Visual Studio\VC98\MFC\SRC\APPMODUL.CPP"
+"E:\VC game Program\成型游戏代码\拼图\skyblue_PinTu\MainFrm.cpp"
+"E:\VC game Program\成型游戏代码\拼图\skyblue_PinTu\OrgView.cpp"
+"E:\VC game Program\成型游戏代码\拼图\skyblue_PinTu\SettingDlg.cpp"
+"E:\VC game Program\成型游戏代码\拼图\skyblue_PinTu\skyblue_PinTu.cpp"
+"E:\VC game Program\成型游戏代码\拼图\skyblue_PinTu\skyblue_PinTuDoc.cpp"
+"E:\VC game Program\成型游戏代码\拼图\skyblue_PinTu\skyblue_PinTuView.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\skyblue\LOCALS~1\Temp\RSP97.tmp" 
+Creating temporary file "C:\DOCUME~1\skyblue\LOCALS~1\Temp\RSP98.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/skyblue_PinTu.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\VC game Program\成型游戏代码\拼图\skyblue_PinTu\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\skyblue\LOCALS~1\Temp\RSP98.tmp" 
+Creating temporary file "C:\DOCUME~1\skyblue\LOCALS~1\Temp\RSP99.tmp" with contents
+[
+winmm.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/skyblue_PinTu.pdb" /debug /machine:I386 /out:"Debug/skyblue_PinTu.exe" /pdbtype:sept 
+".\Debug\APPMODUL.OBJ"
+".\Debug\MainFrm.obj"
+".\Debug\OrgView.obj"
+".\Debug\SettingDlg.obj"
+".\Debug\skyblue_PinTu.obj"
+".\Debug\skyblue_PinTuDoc.obj"
+".\Debug\skyblue_PinTuView.obj"
+".\Debug\StdAfx.obj"
+".\Debug\skyblue_PinTu.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\skyblue\LOCALS~1\Temp\RSP99.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+APPMODUL.CPP
+D:\Microsoft Visual Studio\VC98\MFC\SRC\APPMODUL.CPP(54) : warning C4073: initializers put in library initialization area
+MainFrm.cpp
+OrgView.cpp
+SettingDlg.cpp
+skyblue_PinTu.cpp
+skyblue_PinTuDoc.cpp
+skyblue_PinTuView.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+skyblue_PinTu.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQueryMobile - SimpleDialog Dev</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
+	<link type="text/css" href="http://dev.jtsage.com/jQM-DateBox/css/demos.css" rel="stylesheet" /> 
+	
+	<!-- NOTE: Script load order is significant! -->
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.js"></script>
+	
+	<script type="text/javascript" src="../js/jqm-windows.mdialog.js"></script>
+	
+</head>
+<body>
+<div data-role="page" id="main"> 
+	<div data-role="header"> 
+		<h1>jQMWindows - mDialog Dev</h1>
+	</div>
+	<div data-role="content">
+		<h2>Some Header</h2>
+		<p>The world looks mighty good to me, cause Tootsie Rolls are all I see. Whatever it is I think I see, becomes a Tootsie Roll to me! Tootsie Roll how I love your chocolatey chew, Tootsie Roll I think I'm in love with you. Whatever it is I think I see, becomes a Tootsie Roll to me!</p>
+		
+		<script type="text/javascript"> 
+			$(document).on('vclick', '#simplebool', function() {
+				$('<div>').mdialog({
+					useMenuMode: true,
+					menuButtonType:  'list',
+					closeButton: true,
+					menuHeaderText: 'Inputs!',
+					menuSubtitle: 'Pick one, eh?',
+					menuMinWidth: '300px',
+					menuInputList: [
+						{'id': 'firstIN', 'title':'An Input #1', 'type':'text'},
+						{'id': 'secondIN', 'title':'An Input #2', 'type':'text'}
+					],
+					callbackClose: function(inputA, inputB) { 
+						if ( window.stopper === false ) {
+							alert(inputA[0] + ' = ' + inputA[1] + "\n" + inputB[0] + ' = ' + inputB[1]);
+						}
+					},
+					buttons: {
+						'OK': {
+							click: function (e,a,b) { 
+								window.stopper = false;
+								alert('You clicked OK: '+a[0]);
+							}
+						},
+						'Cancel': {
+							click: function () { 
+								window.stopper = true;
+								alert('You clicked CANCEL');
+							},
+							icon: "delete",
+							theme: "c",
+							text: "Not Cancel"
+						}
+					}
+				});
+			});
+			
+		</script>
+		<a href="#" id="simplebool" data-role="button">Open Dialog</a>
+
+	</div>
+	<div data-role="footer" data-position="fixed">
+		<h1>(c) JTSage</h1>
+	</div>
+</div>
+</html>

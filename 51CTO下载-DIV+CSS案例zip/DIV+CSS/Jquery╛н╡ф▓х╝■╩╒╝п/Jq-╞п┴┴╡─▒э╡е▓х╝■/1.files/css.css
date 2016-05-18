@@ -1,0 +1,75 @@
+BODY {
+	FONT-SIZE: 12px; MARGIN: 0px; COLOR: #333333; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.top_menu {
+	BORDER-TOP-STYLE: none; BORDER-BOTTOM: #dbdbdb 1px solid; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 45px; BACKGROUND-COLOR: #f6f6f6
+}
+.left_menu {
+	BORDER-RIGHT: #dbdbdb 1px solid; BORDER-TOP: #dbdbdb 1px solid; BORDER-LEFT: #dbdbdb 1px solid; WIDTH: 136px; LINE-HEIGHT: 20px; BORDER-BOTTOM: #dbdbdb 1px solid; HEIGHT: 20px; BACKGROUND-COLOR: #f6f6f6
+}
+.bottom_menu {
+	BORDER-TOP: #dbdbdb 1px solid; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 35px; BACKGROUND-COLOR: #f6f6f6; BORDER-BOTTOM-STYLE: none
+}
+.intro {
+	BORDER-RIGHT: #dbdbdb 1px solid; BORDER-TOP: #dbdbdb 1px solid; MARGIN: 0px; BORDER-LEFT: #dbdbdb 1px solid; BORDER-BOTTOM: #dbdbdb 1px solid
+}
+.intro_textarea {
+	BORDER-RIGHT: #dbdbdb 1px solid; BORDER-TOP: #dbdbdb 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #dbdbdb 1px solid; COLOR: #333333; BORDER-BOTTOM: #dbdbdb 1px solid; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none
+}
+.left_menu_item {
+	CURSOR: hand; LINE-HEIGHT: 18px; border-spacing: 3px
+}
+.left_menu_item_onmousemove {
+	BACKGROUND: #fff2e6; CURSOR: hand; LINE-HEIGHT: 18px; border-spacing: 3px
+}
+.left_menu_item_onmousedown {
+	BACKGROUND: #fff2e6; LINE-HEIGHT: 18px
+}
+.left_menu_logout {
+	BORDER-RIGHT: #dbdbdb 1px solid; BORDER-TOP: #dbdbdb 1px solid; BORDER-LEFT: #dbdbdb 1px solid; LINE-HEIGHT: 16px; BORDER-BOTTOM: #dbdbdb 1px solid; HEIGHT: 16px; BACKGROUND-COLOR: #f6f6f6
+}
+.list_table {
+	BORDER-RIGHT: #dbdbdb 1px solid; BORDER-TOP: #dbdbdb 1px solid; MARGIN: 0px 0px 10px 10px; BORDER-LEFT: #dbdbdb 1px solid; BORDER-BOTTOM: #dbdbdb 1px solid
+}
+.nav {
+	BACKGROUND: #ffffff; MARGIN: 0px 0px 5px; COLOR: #ff9900; BORDER-BOTTOM: #dbdbdb 1px solid
+}
+.form_button {
+	BORDER-RIGHT: #dbdbdb 1px solid; BORDER-TOP: #dbdbdb 1px solid; BORDER-LEFT: #dbdbdb 1px solid; LINE-HEIGHT: 16px; BORDER-BOTTOM: #dbdbdb 1px solid; HEIGHT: 18px; BACKGROUND-COLOR: #ffffff
+}
+.list_table_header {
+	BACKGROUND: #ffa851; COLOR: #ffffff; LINE-HEIGHT: 15px
+}
+.form_table {
+	BORDER-RIGHT: #dbdbdb 1px solid; BORDER-TOP: #dbdbdb 1px solid; MARGIN: 0px 0px 10px; BORDER-LEFT: #dbdbdb 1px solid; COLOR: #ff9900; BORDER-BOTTOM: #dbdbdb 1px solid
+}
+A:link {
+	FONT-SIZE: 12px; COLOR: #333333; FONT-STYLE: normal; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-SIZE: 12px; COLOR: #333333; FONT-STYLE: normal; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 12px; COLOR: #333333; TEXT-DECORATION: underline
+}
+.form_table_inside {
+	BORDER-RIGHT: #dbdbdb 1px solid; BORDER-TOP: #dbdbdb 1px solid; MARGIN: 0px; BORDER-LEFT: #dbdbdb 1px solid; COLOR: #333333; BORDER-BOTTOM: #dbdbdb 1px solid; BACKGROUND-COLOR: #f6f6f6
+}
+.form_input {
+	BORDER-RIGHT: #dbdbdb 1px solid; BORDER-TOP: #dbdbdb 1px solid; BORDER-LEFT: #dbdbdb 1px solid; WIDTH: 260px; COLOR: #333333; LINE-HEIGHT: 14px; BORDER-BOTTOM: #dbdbdb 1px solid; FONT-STYLE: normal; HEIGHT: 14px; BACKGROUND-COLOR: #ffffff
+}
+.form_textarea {
+	BORDER-RIGHT: #dbdbdb 1px solid; BORDER-TOP: #dbdbdb 1px solid; BORDER-LEFT: #dbdbdb 1px solid; WIDTH: 150px; COLOR: #333333; LINE-HEIGHT: 14px; BORDER-BOTTOM: #dbdbdb 1px solid; FONT-STYLE: normal; BACKGROUND-COLOR: #ffffff
+}
+.form_select_multiple {
+	BORDER-RIGHT: #dbdbdb 1px solid; BORDER-TOP: #dbdbdb 1px solid; FONT-SIZE: 9px; BORDER-LEFT: #dbdbdb 1px solid; WIDTH: 280px; COLOR: #333333; LINE-HEIGHT: 11px; BORDER-BOTTOM: #dbdbdb 1px solid; FONT-STYLE: normal; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff
+}
+.error_message {
+	TEXT-DECORATION: underline
+}
+.user_info_title {
+	BORDER-RIGHT: #dbdbdb 1px; BORDER-TOP: #dbdbdb 1px; BORDER-LEFT: #dbdbdb 1px; BORDER-BOTTOM: #dbdbdb 1px solid; HEIGHT: 50px; BACKGROUND-COLOR: #ffffff
+}
+.login_put {
+	BORDER-RIGHT: #e2e2e4 1px solid; BACKGROUND-POSITION: center 50%; BORDER-TOP: #e2e2e4 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 12px; VERTICAL-ALIGN: text-bottom; BORDER-LEFT: #e2e2e4 1px solid; WIDTH: 120px; COLOR: #4a85c6; LINE-HEIGHT: 18px; BORDER-BOTTOM: #e2e2e4 1px solid; HEIGHT: 18px; TEXT-DECORATION: none
+}

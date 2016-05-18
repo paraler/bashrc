@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>jQuery+CSS清新蓝色水平二级菜单</title>
+<link rel="stylesheet" type="text/css" href="header.css" />
+<script language="javascript" type="text/javascript" src="jquery-1.3.2.min.js"></script>
+<script language="javascript" type="text/javascript">
+$(document).ready(function(){
+	$(".mainNav a").mouseover(function(){
+		$(".mainNav a").attr("class","");
+		$("#"+this.id).attr("class","actived");
+		var currentMenuNo = parseInt(this.id.substring(1));
+		$(".secondNav div").each(function(){
+			$(this).hide();
+			$("#subNav"+currentMenuNo).show();
+		});
+	});
+});
+</script>
+</head>
+<body>
+<div class="header">
+	<div class="padder">
+		<div class="nav">
+			<div class="navLaftBg">
+				<div class="navRightBg">
+					<div class="mainNav">
+						<a href="http://sc.xueit.com/" id="n1" class="actived">首页</a>
+						<a href="http://sc.xueit.com/css-templates/" id="n2">CSS模板</a>
+						<a href="http://sc.xueit.com/admin-templates/" id="n3">后台模板</a>
+						<a href="http://sc.xueit.com/icons/" id="n4">图片图标</a>
+						<a href="http://sc.xueit.com/css-code/" id="n5">CSS代码</a>
+						<a href="http://sc.xueit.com/css-menu/" id="n6">CSS菜单</a>
+						<a href="http://sc.xueit.com/css-chart/" id="n7">CSS图表</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="secondNav">
+			<div id="subNav2" class="subNav2">
+				<a href="http://sc.xueit.com/icons/ico/" class="actived">ICO图标</a>
+				<a href="http://sc.xueit.com/icons/gif/">GIF图片</a>
+				<a href="http://sc.xueit.com/icons/png/">PNG图标</a>
+			</div>
+			<div id="subNav3" class="subNav3">
+				<a href="http://sc.xueit.com/icons/ico/" class="actived">ICO图标</a>
+				<a href="http://sc.xueit.com/icons/gif/">GIF图片</a>
+				<a href="http://sc.xueit.com/icons/png/">PNG图标</a>
+			</div>
+			<div id="subNav4" class="subNav4">
+				<a href="http://sc.xueit.com/icons/ico/" class="actived">ICO图标</a>
+				<a href="http://sc.xueit.com/icons/gif/">GIF图片</a>
+				<a href="http://sc.xueit.com/icons/png/">PNG图标</a>
+			</div>
+			<div id="subNav5" class="subNav5">
+				<a href="http://sc.xueit.com/icons/ico/" class="actived">ICO图标</a>
+				<a href="http://sc.xueit.com/icons/gif/">GIF图片</a>
+				<a href="http://sc.xueit.com/icons/png/">PNG图标</a>
+			</div>
+			<div id="subNav6" class="subNav6">
+				<a href="http://sc.xueit.com/icons/ico/" class="actived">ICO图标</a>
+				<a href="http://sc.xueit.com/icons/gif/">GIF图片</a>
+				<a href="http://sc.xueit.com/icons/png/">PNG图标</a>
+			</div>
+			<div id="subNav7" class="subNav7">
+				<a href="http://sc.xueit.com/icons/ico/" class="actived">ICO图标</a>
+				<a href="http://sc.xueit.com/icons/gif/">GIF图片</a>
+				<a href="http://sc.xueit.com/icons/png/">PNG图标</a>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile - UI - SelectMenu</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+    </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0">
+</head>
+<body>
+    <div data-role="page" data-theme="a">
+        <div data-role="header">
+            <h1>选择菜单</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <form target="#">
+            <div class="ui-field-contain">
+                <label for="airport">机场</label>
+                <select name="airport" id="airport" 
+                        data-icon="star" data-iconpos="left">
+                    <option value="PEK">北京首都国际机场</option>
+                    <option value="PVG">上海浦东国际机场</option>
+                    <option value="SHA">上海虹桥国际机场</option>
+                    <option value="CAN">广州白云国际机场</option>
+                    <option value="CTU">成都双流国际机场</option>
+                </select>
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

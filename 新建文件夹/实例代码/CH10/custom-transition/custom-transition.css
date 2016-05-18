@@ -1,0 +1,112 @@
+/* 
+data-transition="effect01" 
+*/
+
+.effect01.in {
+    -webkit-transform:           translateY(0%);
+    -moz-transform:              translateY(0%);
+    -webkit-animation-name:      slideUp;
+    -moz-animation-name:         slideUp;
+}
+
+@-webkit-keyframes slideUp {
+    from    {
+                -webkit-transform:  translateY(100%);
+            }
+    to       {
+                -webkit-transform:  translateY(0%);
+            }
+}
+	
+@-moz-keyframes slideUp {
+    from    {
+                -moz-transform: translateY(100%); 
+            }
+    to      {
+                -moz-transform: translateY(0%);
+            }
+}
+			
+.effect01.out {
+    -webkit-transform:           translateY(100%);
+    -moz-transform:              translateY(100%);
+    -webkit-animation-name:      slideDown_zoomOut;
+    -moz-animation-name:         slideDown_zoomOut;
+}
+		
+@-webkit-keyframes slideDown_zoomOut {
+    from    {
+                -webkit-transform: translateY(0%); 
+            }
+    to      {
+                -webkit-transform: translateY(100%);
+                -webkit-transform: scale(0.2,0.2);
+            }
+}
+
+@-moz-keyframes slideDown_zoomOut {
+    from    {
+                -moz-transform: translateY(0%); 
+            }
+    to      {
+                -moz-transform: translateY(100%);
+                transform:      scale(0.2,0.2);
+                -ms-transform:  scale(0.2,0.2); 
+            }
+}
+
+.effect01.in.reverse {
+    -webkit-transform:           translateY(100%);
+    -moz-transform:              translateY(100%);
+    -webkit-animation:           slideUp_zoomIn 0.3s;
+    -moz-animation:              slideUp_zoomIn 0.3s;
+}
+	
+@-webkit-keyframes slideUp_zoomIn {
+    from    {
+                -webkit-transform: translateY(100%);
+                -webkit-transform:scale(0.2,0.2);
+            }
+    to      {
+                -webkit-transform: translateY(0%);
+                -webkit-transform:scale(1,1);
+            }
+}
+
+@-moz-keyframes slideUp_zoomIn {
+    from    {
+                -moz-transform: translateY(100%);
+                transform:scale(0.2,0.2);
+                -ms-transform:scale(0.2,0.2); 
+            }
+    to      {
+                -moz-transform: translateY(0%);
+                transform:scale(1,1);
+                -ms-transform:scale(1,1); 
+            }
+}
+			
+.effect01.out.reverse {
+    -webkit-transform:           translateY(0%);
+    -moz-transform:              translateY(0%);
+    -webkit-animation:           slideDown 0.3s;
+    -moz-animation:              slideDown 0.3s;
+}
+
+@-webkit-keyframes slideDown {
+    from    {
+                -webkit-transform: translateY(0%); 
+            }
+    to      {
+                -webkit-transform: translateY(100%); 
+            }
+}
+
+@-moz-keyframes slideDown {
+    from    {
+                -moz-transform: translateY(0%); 
+            }
+    to      {
+                -moz-transform: translateY(100%); 
+            }
+} 

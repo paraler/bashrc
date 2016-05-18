@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Background - Color - Opacity</title>
+        <style>
+            #html, body {
+                padding:           0;
+                margin:            0;
+                width:             100%;
+            }
+            #dimOverlay {
+                position:          fixed;
+                height:            100%;
+                width:             100%;
+                top:               0px;
+                left:              0px;
+                background-color:  black;
+	            opacity:           0.5;
+                display:           none;
+            }
+            #popupDiv {
+                position:          absolute;
+                height:            100px;
+                width:             300px;
+                background-color:  white;
+                opacity:           0.8;
+                display:           none;
+                text-align:        center;
+                top:               50%;
+                left:              50%;
+                margin-top:        -50px;
+                margin-left:       -150px;
+            }
+        </style>
+
+        <script>
+            function dim() {
+                var overlayDiv = document.getElementById("dimOverlay");
+                overlayDiv.style.zindex = 1000;
+                overlayDiv.style.display = "block";
+                var popup = document.getElementById("popupDiv");
+                popup.style.zindex = 1050;
+                popup.style.display = "block";
+            }
+            function removeDim() {
+                var overlayDiv = document.getElementById("dimOverlay");
+                overlayDiv.style.display = "none";
+                var popupDiv = document.getElementById("popupDiv");
+                popupDiv.style.display = "none";
+            }
+        </script>
+    </head>
+    <body>
+        <div id="main">
+            <img src="images/Peterborough_Lift_Lock.jpg" 
+                    alt="加拿大彼得堡船闸" style="width:400px; height:auto;">
+            <hr>
+            <button onclick="dim()">请点击</button>
+        </div>
+        
+        <div id="dimOverlay">&nbsp;</div>
+        <div id="popupDiv">
+            <button onclick="removeDim()" style="position:relative;top:30px;">
+                    恢复</button>
+        </div>
+    </body>
+</html>

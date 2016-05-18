@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Effects - Fading (callback)</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#fadeIn").click(function() {
+                $("#n1").fadeIn("slow", function() {
+                    $("#info").text("fadeIn()完成");
+                });
+            });
+            $("#fadeOut").click(function() {
+                $("#n1").fadeOut("slow", function() {
+                    $("#info").text("fadeOut()完成");
+                });
+            });
+        });
+    </script>
+    <style>
+        #info {
+            width:              200px;
+            background-color:   lightBlue;
+        }
+    </style>
+</head>
+<body>
+    <button id="fadeIn">淡入</button>
+    <button id="fadeOut">淡出</button>
+    <br>
+    <div id="info">状态信息</div>
+    <hr>
+    <img id="n1" src="images/n1.jpg" alt="n1" width="129" height="60">
+</body>
+</html>

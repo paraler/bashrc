@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>input元素 - pattern属性</title>
+    </head>
+
+    <body>
+        <form action="#" method="post" >
+            <label for="number">数字</label>
+            <input type="text" name="number" id="number" value="" 
+                    pattern="[0-9]*" /><br>
+            <label for="phone800">800电话号码</label>
+            <input type="text" name="phone800" id="phone800" value="" 
+                    pattern="800 [0-9]*" /><br>
+            <label for="postalCN">中国邮政编码</label>
+            <input type="text" name="postalCN" id="postalCN" value=""
+                    pattern="[0-9]{6}" ><br>
+            <label for="postalUS">美国邮政编码</label>
+            <input type="text" name="postalUS" id="postalUS" value="" 
+                    pattern="^\d{5}(?:[-\s]\d{4})?$" /><br>
+            <label for="postalCA">加拿大邮政编码</label>
+            <input type="text" name="postalCA" id="postalCA" value="" 
+                    pattern="[A-Z][0-9][A-Z] [0-9][A-Z][0-9]" /><br>
+            <label for="langCode">ISO语言代码</label>
+            <input type="text" name="langCode" id="langCode" value=""
+                    pattern="[a-z]{2}" >
+        </form>
+    </body>
+
+</html>

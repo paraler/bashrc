@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile 插件</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+    </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet" />
+    <link href="js/jquery-mobile-classic-theme/theme-classic.css" 
+            rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0">
+    <!-- DateBox 文件 -->
+    <link href="plugins/datebox/css/jqm-datebox-1.4.2.css" 
+            rel="stylesheet"/>
+    <script src="plugins/datebox/js/jqm-datebox-1.4.2.core.js">
+    </script>
+    <script src="plugins/datebox/js/jqm-datebox-1.4.2.mode.calbox.js">
+    </script>
+    <script src="plugins/datebox/js/jqm-datebox-1.4.2.mode.datebox.js">
+    </script>
+    <script src="plugins/datebox/js/jqm-datebox-1.4.2.mode.slidebox.js">
+    </script>
+    <script src="plugins/datebox/js/jqm-datebox-1.4.2.mode.flipbox.js">
+    </script>
+    <script src="plugins/datebox/js/jqm-datebox-1.4.2.mode.durationbox.js">
+    </script>
+    <script src="plugins/datebox/i18n/jquery.mobile.datebox.i18n.zh-CN.utf8.js">
+    </script>
+</head>
+<body>
+    <div data-role="page" data-theme="b">
+        <div data-role="header">
+            <h1>DateBox</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <input type="text" data-role="datebox" 
+                    data-options='{"mode":"calbox", "themeDate":"e", "themeDateToday":"c", "themeDatePick":"a"}'>
+            <input type="text" data-role="datebox" 
+                    data-options='{"mode":"datebox", "themeSetButton":"a", "themeButton":"b", "themeInput":"e"}'>
+            <input type="text" data-role="datebox" 
+                    data-options='{"mode":"flipbox", "themeDate":"e", "themeDatePick":"b"}'>
+            <input type="text" data-role="datebox" 
+                    data-options='{"mode":"slidebox", "themeDate":"e", "themeDatePick":"b"}'>
+            <input type="text" data-role="datebox" 
+                    data-options='{"mode":"durationbox", "themeButton":"b", "themeInput":"e"}'>
+        </div>
+    </div>
+</body>
+</html>

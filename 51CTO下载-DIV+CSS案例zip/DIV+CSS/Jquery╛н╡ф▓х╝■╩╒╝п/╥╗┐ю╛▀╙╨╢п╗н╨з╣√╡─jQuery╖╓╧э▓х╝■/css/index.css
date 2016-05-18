@@ -1,0 +1,96 @@
+/*  
+Theme Name: Airos Chou
+Theme URI: http://www.sunflowamedia.com
+Download: http://www.codefans.net
+Description: Web Design examples
+*/
+body { 
+	color: #666;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0 auto;
+	text-shadow: 1px 1px 1px #FFF;
+	background: url(../images/main.jpg) repeat;
+}
+img { border: 0;}
+h1.title_name {
+	font-family: "Trebuchet MS","Myriad Pro",Arial,sans-serif;
+	font-weight: normal;
+	font-size: 4em;
+	color: #666;
+	margin: 0;
+	padding: 20px 0 20px 0;
+	text-align: center;
+	text-shadow: 1px 1px 1px #FFF;
+	line-height: 1em;
+}
+h1.title_name span {
+	font-family: normal Georgia,'Times New Roman',Times,serif;
+	color: #FE4902;
+	font-size: 0.9em;
+}
+h1.title_name small {
+	display: block;
+	font-family: normal Verdana,Arial,Helvetica,sans-serif;
+	font-size: 0.3em;
+	font-weight: bold;
+	letter-spacing: 0.5em;
+	text-transform: uppercase;
+	color: #AAA;
+}
+p.copy_right {
+	padding: 200px 0 0 0;
+	clear: both;
+	font-size: 1.1em;
+	letter-spacing: 1px;
+	text-align: center;
+	overflow: hidden;
+	font-weight: bold;
+}
+p.copy_right a {
+	color: #FE4902;
+	text-shadow: none;
+}
+p.copy_right a:hover {
+	text-decoration: none;
+}
+#example {
+	width: 950px;
+	margin: 100px auto 0 auto;
+}
+/* Top style */
+.socials {
+	display: block;
+	width: 32px;
+	height: 32px;
+	background: url(../images/socials/share.png) no-repeat;
+	cursor: pointer;
+	position: relative;
+}
+.nature {
+	display: block;
+	width: 107px;
+	height: 107px;
+	background: url(../images/onepiece/pic_1.png) no-repeat;
+	cursor: pointer;
+	position: relative;
+}
+.socials, .nature {
+	margin: 0 auto;
+}
+.socials {
+	margin-bottom: 150px;
+}
+ul.reset,
+ul.reset li {
+	display: block;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+ul.reset li {
+	position: absolute;
+}
+ul.reset li a {
+	outline: none;
+}

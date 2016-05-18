@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>3D Transforms - RotateY</title>
+        <style>
+            div {
+                width:              150px;
+                height:             100px;
+                background-color:   lightGray;
+                cursor:             pointer;
+            }
+            .rotateY45 {
+                -webkit-transform:  rotateY(45deg);
+                transform:          rotateY(45deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="obj" onclick="back()">CSS三维变换<br>演示</div>
+        <button onclick="rotateY45()">围绕Y轴转45度</button>
+        <br>
+        <script>
+            var obj = document.getElementById("obj");
+            function back() {
+                obj.className = " ";
+            }
+            function rotateY45() {
+                obj.className = "rotateY45";
+            }
+        </script>
+    </body>
+</html>

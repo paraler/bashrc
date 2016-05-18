@@ -1,0 +1,54 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: BoxMan_Editer - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/BoxMan_Editer.res" /d "_DEBUG" "E:\VC game Program\成型游戏代码\推箱子\skyblue_BoxMan\BoxMan_Editer\BoxMan_Editer.rc"" 
+Creating temporary file "C:\DOCUME~1\skyblue\LOCALS~1\Temp\RSP60.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/BoxMan_Editer.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\VC game Program\成型游戏代码\推箱子\skyblue_BoxMan\BoxMan_Editer\BoxMan_Edit.cpp"
+"E:\VC game Program\成型游戏代码\推箱子\skyblue_BoxMan\BoxMan_Editer\BoxMan_Editer.cpp"
+"E:\VC game Program\成型游戏代码\推箱子\skyblue_BoxMan\BoxMan_Editer\Boxman_EditerWnd.cpp"
+"E:\VC game Program\成型游戏代码\推箱子\skyblue_BoxMan\BoxMan_Editer\LoadMapDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\skyblue\LOCALS~1\Temp\RSP60.tmp" 
+Creating temporary file "C:\DOCUME~1\skyblue\LOCALS~1\Temp\RSP61.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/BoxMan_Editer.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\VC game Program\成型游戏代码\推箱子\skyblue_BoxMan\BoxMan_Editer\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\skyblue\LOCALS~1\Temp\RSP61.tmp" 
+Creating temporary file "C:\DOCUME~1\skyblue\LOCALS~1\Temp\RSP62.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/BoxMan_Editer.pdb" /debug /machine:I386 /out:"Debug/BoxMan_Editer.exe" /pdbtype:sept 
+".\Debug\BoxMan_Edit.obj"
+".\Debug\BoxMan_Editer.obj"
+".\Debug\Boxman_EditerWnd.obj"
+".\Debug\LoadMapDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\BoxMan_Editer.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\skyblue\LOCALS~1\Temp\RSP62.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+BoxMan_Edit.cpp
+BoxMan_Editer.cpp
+Boxman_EditerWnd.cpp
+LoadMapDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+BoxMan_Editer.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

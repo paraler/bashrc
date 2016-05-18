@@ -1,0 +1,7 @@
+将 asyncbox 文件夹复制到您的项目中引用
+
+注意：使用 ZCMS 皮肤需对该 asyncbox.css 内最后一栏，设置绝对于当前引用页面的路径。
+
+blog : http://wuxinxi007.cnblogs.com/
+
+Copyright &copy; 2011 wuxinxi007. All Rights Reserved. 

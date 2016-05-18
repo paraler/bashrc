@@ -1,0 +1,48 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: skyblue_LLK_Cheat - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/skyblue_LLK_Cheat.res" /d "_DEBUG" /d "_AFXDLL" "E:\VC game Program\成型游戏代码\连连看+外挂\skyblue_LLK_Cheat\skyblue_LLK_Cheat.rc"" 
+Creating temporary file "C:\DOCUME~1\skyblue\LOCALS~1\Temp\RSPA1.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/skyblue_LLK_Cheat.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\VC game Program\成型游戏代码\连连看+外挂\skyblue_LLK_Cheat\skyblue_LLK_Cheat.cpp"
+"E:\VC game Program\成型游戏代码\连连看+外挂\skyblue_LLK_Cheat\skyblue_LLK_CheatDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\skyblue\LOCALS~1\Temp\RSPA1.tmp" 
+Creating temporary file "C:\DOCUME~1\skyblue\LOCALS~1\Temp\RSPA2.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/skyblue_LLK_Cheat.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\VC game Program\成型游戏代码\连连看+外挂\skyblue_LLK_Cheat\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\skyblue\LOCALS~1\Temp\RSPA2.tmp" 
+Creating temporary file "C:\DOCUME~1\skyblue\LOCALS~1\Temp\RSPA3.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/skyblue_LLK_Cheat.pdb" /debug /machine:I386 /out:"Debug/skyblue_LLK_Cheat.exe" /pdbtype:sept 
+".\Debug\skyblue_LLK_Cheat.obj"
+".\Debug\skyblue_LLK_CheatDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\skyblue_LLK_Cheat.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\skyblue\LOCALS~1\Temp\RSPA3.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+skyblue_LLK_Cheat.cpp
+skyblue_LLK_CheatDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+skyblue_LLK_Cheat.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

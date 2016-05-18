@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile - checkboxradio</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+    </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0">
+
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1>迷你型单选按钮</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <form>
+                <label for="fruit1">苹果</label>
+                <input type="radio" name="fruit" id="fruit1" 
+                        data-mini="true" value="apple"/>
+                <label for="fruit2">香蕉</label>
+                <input type="radio" name="fruit" id="fruit2" 
+                        data-mini="true" value="banana"/>
+                <label for="fruit3">葡萄</label>
+                <input type="radio" name="fruit" id="fruit3" 
+                        data-mini="true" value="grade"/>
+                <label for="fruit4">西瓜</label>
+                <input type="radio" name="fruit" id="fruit4" 
+                        data-mini="true" value="water melon"/>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

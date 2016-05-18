@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile 插件</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+    </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet" />      
+    <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0">
+    <!-- windows (alert) 文件 -->
+    <script src="plugins/windows/js/jqm-windows.alertbox.js"></script>
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1>Windows (AlertBox)</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <div data-role="popup" class="ui-content jqm-alert-box"
+                    data-alertbox-close-time="10000" 
+                    data-alertbox-transition="slide">
+                <a href="#" data-rel="back" data-role="button" 
+                        data-icon="delete" data-iconpos="notext"
+                        class="ui-btn-right">关闭</a>
+                <p style="text-align:center">
+                    jQuery Mobile Windows插件-警告窗口
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

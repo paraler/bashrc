@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>AsyncBox Test Page - wuxinxi007</title>
+<link href="reg.css" rel="stylesheet" type="text/css" />
+<!--<link href="asyncbox/skins/ZCMS/asyncbox.css" type="text/css" rel="stylesheet" />-->
+
+<!--<link href="asyncbox/skins/Chrome/asyncbox.css" rel="stylesheet" type="text/css" />-->
+<!--<link href="asyncbox/skins/Default/asyncbox.css" rel="stylesheet" type="text/css" />-->
+<link href="asyncbox/skins/QQBrowser/asyncbox.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="asyncbox/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="asyncbox/jQuery.AsyncBox.v1.3.5.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#btn_alert').click(function(){
+			asyncbox.alert('asyncbox test!');
+		});
+		$('#btn_html').click(function(){
+			asyncbox.open({
+				html:'asyncbox test!'
+			});
+		});
+	});
+</script>
+
+</head>
+<body>
+	测试样式 - 插件运行 - IE6皮肤 - HTML 模式自适应
+	<input id="btn_alert" type="button" value="alert" />
+    <input id="btn_html" type="button" value="html" />
+</body>
+</html>

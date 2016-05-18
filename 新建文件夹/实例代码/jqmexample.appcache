@@ -1,0 +1,10 @@
+CACHE MANIFEST
+
+CACHE:
+./CH02/index.html
+
+NETWORK:
+./CH02/api_*.html
+
+FALLBACK:
+./CH02/basic.html ./offline-error.html

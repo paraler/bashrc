@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery - 网页动态处理 - CSS类</title>
+        <meta charset="utf-8" />
+        <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+        <style>
+            button {
+                width:             30px;
+            }
+            textarea {
+                width:             300px;
+                height:            100px;
+            }
+            .bold {
+                font-weight:       bolder;
+            }
+            .italic {
+                font-style:        italic;
+            }
+            .underline {
+                text-decoration:   underline;
+            }
+            
+        </style>
+        <script>
+            $(document).ready(function() {
+                $("#button_bold").click(function() {
+                    if ( $( "textarea" ).hasClass("bold")) {
+                        $( "textarea" ).removeClass( "bold" );
+                    } else {
+                        $( "textarea" ).addClass( "bold" );
+                    }
+                });
+                $("#button_italic").click(function() {
+                    if ( $( "textarea" ).hasClass("italic")) {
+                        $( "textarea" ).removeClass( "italic" );
+                    } else {
+                        $( "textarea" ).addClass( "italic" );
+                    }
+                });
+                $("#button_underline").click(function() {
+                    if ( $( "textarea" ).hasClass("underline")) {
+                        $( "textarea" ).removeClass( "underline" );
+                    } else {
+                        $( "textarea" ).addClass( "underline" );
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button id="button_bold" class="bold">B</button>
+        <button id="button_italic" class="italic">I</button>
+        <button id="button_underline" class="underline">U</button>
+        <hr>
+        <textarea></textarea>
+    </body>
+</html>

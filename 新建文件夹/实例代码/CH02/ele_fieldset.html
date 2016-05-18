@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>元素 - fieldset/legend</title>
+    </head>
+
+    <body>
+        <form method="post" action="#">
+            <fieldset>
+                <legend>产品反馈</legend>
+                <label for="model">产品型号</label>
+                <input type="text" id="model" placeholder="请输入产品型号..."><br>
+                <label for="feedback">反馈</label>
+                <textarea id="feedback" rows="5" cols="30" placeholder="请输入您的意见和建议..."></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>联系信息</legend>
+                <label for="customer">客户</label>
+                <input type="text" id="customer" name="customer"><br>
+                <label for="email">电邮</label>
+                <input type="email" id="email" name="email"><br>
+            </fieldset>
+            <input type="submit" value="提交" >
+        </form>
+    </body>
+</html>

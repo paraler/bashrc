@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile - button style</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+    </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0">
+</head>
+
+<body>
+    <div data-role="page" id="home">
+        <div data-role="header" 
+                data-position="fixed" data-tap-toggle="false">
+            <h1>按钮样式</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <button disabled>失效状态</button><br>
+            <a href="#" class="ui-btn ui-state-disabled">
+                    失效状态</a><br>
+            <a href="#" data-role="button" data-inline="true">
+                    inline</a><br>
+            <a href="#" data-role="button" data-shadow="false">
+                    无阴影</a><br>
+            <a href="#" data-role="button" data-corners="false">
+                    直角边框</a><br>
+        </div>
+        <div data-role="footer" 
+                data-position="fixed" data-tap-toggle="false">
+            <h6>页尾</h6>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="JS代码,TAB标签,JS广告代码,JS特效代码" />
+<meta name="description" content="此代码内容为不规则TAB选项卡效果，属于站长常用代码，更多TAB标签代码请访问懒人图库JS代码频道。" />
+<title>不规则TAB选项卡效果_懒人图库</title>
+<style type="text/css">
+<!--
+body,td{font-size: 12px;}
+
+.tab{margin-top:100px}
+
+#TabTab03Con1{width:346px;height:100px;line-height:100px;border-left:#757575 1px solid;border-bottom:#757575 1px solid;border-right:#757575 1px solid;}
+#TabTab03Con2{width:346px;height:100px;line-height:100px;border-left:#757575 1px solid;border-bottom:#757575 1px solid;border-right:#757575 1px solid;}
+#TabTab03Con3{width:346px;height:100px;line-height:100px;border-left:#757575 1px solid;border-bottom:#757575 1px solid;border-right:#757575 1px solid;}
+
+.xixi1{width:346px;height:27px;line-height:27px;background-image:url(images/01.jpg);cursor:pointer;}
+.xixi2{width:346px;height:27px;line-height:27px;background-image:url(images/02.jpg);cursor:pointer;}
+.xixi3{width:346px;height:27px;line-height:27px;background-image:url(images/03.jpg);cursor:pointer;}
+
+.tab1{width:115px;height:27px;line-height:27px;float:left;text-align:center;cursor:pointer;}
+.tab2{width:115px;height:27px;line-height:27px;float:left;text-align:center;cursor:pointer;color:#FFFFFF;}
+.tab3{width:115px;height:27px;line-height:27px;float:left;text-align:center;cursor:pointer;color:#FFFFFF;}
+
+-->
+</style>
+</head>
+<body style="text-align:center">
+<script type=text/javascript>
+	function setTab03Syn ( i )
+	{
+		selectTab03Syn(i);
+	}
+	
+	function selectTab03Syn ( i )
+	{
+		switch(i){
+			case 1:
+			document.getElementById("TabTab03Con1").style.display="block";
+			document.getElementById("TabTab03Con2").style.display="none";
+			document.getElementById("TabTab03Con3").style.display="none";
+			document.getElementById("font1").style.color="#000000";
+			document.getElementById("font2").style.color="#ffffff";
+			document.getElementById("font3").style.color="#ffffff";
+			break;
+			case 2:
+			document.getElementById("TabTab03Con1").style.display="none";
+			document.getElementById("TabTab03Con2").style.display="block";
+			document.getElementById("TabTab03Con3").style.display="none";
+			document.getElementById("font1").style.color="#ffffff";
+			document.getElementById("font2").style.color="#000000";
+			document.getElementById("font3").style.color="#ffffff";
+			break;
+			case 3:
+			document.getElementById("TabTab03Con1").style.display="none";
+			document.getElementById("TabTab03Con2").style.display="none";
+			document.getElementById("TabTab03Con3").style.display="block";
+			document.getElementById("font1").style.color="#ffffff";
+			document.getElementById("font2").style.color="#ffffff";
+			document.getElementById("font3").style.color="#000000";
+			break;
+		}
+	}
+
+</script>
+
+<div class="tab">
+	<div id="bg" class="xixi1">
+		<div id="font1" class="tab1" onMouseOver="setTab03Syn(1);document.getElementById('bg').className='xixi1'">查询广告企业</div>
+		<div id="font2" class="tab2" onMouseOver="setTab03Syn(2);document.getElementById('bg').className='xixi2'">查询媒体刊例</div>
+		<div id="font3" class="tab3" onMouseOver="setTab03Syn(3);document.getElementById('bg').className='xixi3'">查询供求商情</div>
+	</div>
+    <div id=TabTab03Con1>不规则TAB选项卡效果</div>
+	<div id=TabTab03Con2 style="display:none">学it素材中心（<a href="http://www.xueit.com/down/" target="_blank">实用素材</a>）</div>
+    <div id=TabTab03Con3 style="display:none">转载请保留作者信息</div>
+</div>
+
+
+<p>代码整理：西西（<a href="http://www.lanrentuku.com/" target="_blank">懒人图库</a>）</p>
+<p>＊尊重他人劳动成果，转载请自觉注明出处！注：此代码仅供学习交流，请勿用于商业用途。</p>
+<p></p>
+<p><p>原始代码是用table做的，西西重新用CSS+DIV进行了整理，兼容IE和FF，辛苦整理，转载请注明出处。</p></p>
+<p></p>
+</body>
+</html>

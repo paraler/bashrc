@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Animation - SlideDown</title>
+        <style>
+            img {
+                width:                         100%;
+                height:                        auto;
+            }
+            #div1 {
+                -webkit-animation-name:        slideDown;
+                -webkit-animation-duration:    10s;
+                animation-name:                slideDown;
+                animation-duration:            10s;
+            }
+            @-webkit-keyframes slideDown {
+                from  { -webkit-transform: translateY(-100%); }
+                to    { -webkit-transform: translateY(0); }
+            }
+            @keyframes slideDown {
+                from  { transform: translateY(-100%); }
+                to    { transform: translateY(0); }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div1">
+            <img src="images/whale_02.jpg" alt="killer whale">
+        </div>
+    </body>
+</html>

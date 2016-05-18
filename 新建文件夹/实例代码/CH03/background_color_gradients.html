@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Background - Color - Gradients</title>
+        <style>
+        .container {
+            width:           200px;
+            height:          100px;
+            border-style:    solid;
+            border-width:    1px;
+            float:           left;
+        }
+        .fromTop {               
+            background: -webkit-linear-gradient(white, gray);
+            background: -o-linear-gradient(white, gray); 
+            background: -moz-linear-gradient(white, gray);
+            background: linear-gradient(white, gray); 
+        }
+        .fromLeft {              
+            background: -webkit-linear-gradient(left, white , gray);
+            background: -o-linear-gradient(right, white, gray); 
+            background: -moz-linear-gradient(right, white, gray);
+            background: linear-gradient(to right, white, gray);  
+        }
+        .fromTopLeft {             
+            background: -webkit-linear-gradient(left top, white, gray);
+            background: -o-linear-gradient(bottom right, white, gray); 
+            background: -moz-linear-gradient(bottom right, white, gray);
+            background: linear-gradient(to bottom right, white, gray);   
+        }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class="container fromTop">上 --> 下</div>
+            <div class="container fromLeft">左 --> 右</div>
+            <div class="container fromTopLeft">左上 --> 右下</div>
+        </div>
+    </body>
+</html>

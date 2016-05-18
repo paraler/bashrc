@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Selector - Combinator - Descendant combinator</title>
+        <style>
+            div p {
+                font-size:        x-large;
+            }
+            div > p {
+                font-style:       italic;
+            }
+            div * p {
+                text-decoration:  underline;
+            }
+        </style>
+    </head>
+    <body>
+        <p>p 1</p>
+        <div>
+            <p>p 2</p>
+        </div>
+        <div>
+            <section>
+                <p>p 3</p>
+            </section>
+        </div>
+    </body>
+</html>

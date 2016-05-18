@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery属性</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var count = $(".myBlock").length;
+            $("#info").text("这个网页中含有" + count + "个具有CSS类 ‘myBlock’ 的<div>元素。");
+        });
+    </script>
+    <style>
+        .myBlock {
+            width:             100px;
+            height:            20px;
+            background-color:  yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="info"></div>
+    <div class="myBlock">DIV 1</div>
+    <div class="myBlock">DIV 2</div>
+</body>
+</html>

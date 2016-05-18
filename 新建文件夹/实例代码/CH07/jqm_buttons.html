@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile - buttons</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+    </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet" />
+    <link href="js/jquery-mobile-classic-theme/theme-classic.css" 
+            rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0">
+</head>
+
+<body>
+    <div data-role="page" id="home">
+        <div data-role="header" 
+                data-position="fixed" data-tap-toggle="false" 
+                data-add-back-btn="true" data-back-btn-text="返回">
+            <h1>按钮演示</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <a href="#page2" data-role="button">按钮：第二页</a>
+        </div>
+        <div data-role="footer" 
+                data-position="fixed" data-tap-toggle="false">
+            <h6>页尾</h6>
+        </div>
+    </div>
+    <div data-role="page" id="page2">
+        <div data-role="header" 
+                data-position="fixed" data-tap-toggle="false" 
+                data-add-back-btn="true" data-back-btn-text="返回">
+            <h1>第二页</h1>
+            <a href="#" class="ui-btn-right">按钮1: &lt;a&gt;</a>
+        </div>
+        <div class="ui-content" role="main">
+            <a href="#" data-role="button">
+                    按钮2：data-role=&quot;button&quot;</a>
+            <a href="#" class="ui-btn">
+                    按钮3：class=&quot;ui-btn&quot;</a>
+            <button>按钮4: &lt;button&gt;</button>
+            <input type="button" value="按钮5: type=&quot;button&quot;">
+            <input type="reset" value="按钮6: type=&quot;reset&quot;">
+            <input type="submit" value="按钮7: type=&quot;submit&quot;">
+        </div>
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+            <h6>页尾</h6>
+        </div>
+    </div>
+</body>
+
+</html>

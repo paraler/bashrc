@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery events - Sliding</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#slideUp").click(function() {
+                $("#whale").slideUp();
+            });
+            $("#slideDown").click(function() {
+                $("#whale").slideDown();
+            });
+            $("#slideToggle").click(function() {
+                $("#whale").slideToggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="slideUp">向上滑动</button>
+    <button id="slideDown">向下滑动</button>
+    <button id="slideToggle">向下/向上滑动</button>
+    <hr>
+    <img id="whale" src="images/whale_01.jpg" alt="鲸" width="504" height="376">
+</body>
+</html>

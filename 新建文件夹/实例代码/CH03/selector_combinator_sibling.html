@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Selector - Combinator - Sibling</title>
+        <style>
+            p ~ div {
+                font-size:        x-large;
+            }
+            p + div {
+                font-style:       italic;
+            }
+            p[id=p2] + div {
+                text-decoration:  underline;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="p1">P 1</p>
+        <div>Div 1</div>
+        <div>Div 2</div>
+        <div>Div 3</div>
+        <p id="p2">P 2</p>
+        <div>Div 4</div>
+        <div>Div 5</div>
+        <div>Div 6</div>
+    </body>
+</html>

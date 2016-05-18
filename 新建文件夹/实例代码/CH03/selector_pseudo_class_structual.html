@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Selector - Structural pseudo-classes</title>
+        <style>
+            :root {
+                background-color:  MintCream;
+            }
+            td {
+                border-style:      solid;
+                border-width:      1px;
+                border-color:      blue;
+                width:             30px;
+                height:            10px;
+                text-align:        center;
+            }
+            tr:nth-child(odd) {
+                background-color:  LightCyan;
+            }
+            tr:nth-child(even) {
+                background-color:  LightYellow;
+            }
+            td:nth-child(1) {
+                background-color:  blue;
+            }
+            td:nth-last-child(1) {
+                background-color:  blue;
+            }
+            /*
+            td:first-child {
+                background-color:  red;
+            }
+            td:last-child {
+                background-color:  red;
+            }
+            */
+            td:only-child {
+                background-color:  LightGreen;
+            }
+            td:empty {
+                background-color:  Peru;
+            }
+            td:nth-child(5) {
+                background-color:  green;
+            }
+            td:nth-child(6n+0) {
+                background-color:  pink;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th colspan="10">座位图</th>
+            </tr>
+            <tr>
+                <td>10</td><td>8</td><td>6</td><td>4</td><td>2</td>
+                <td>1</td><td>3</td><td>5</td><td>7</td><td>9</td>
+            </tr>
+            <tr>
+                <td>10</td><td>8</td><td>6</td><td>4</td><td>2</td>
+                <td>1</td><td>3</td><td>5</td><td>7</td><td>9</td>
+            </tr>
+            <tr>
+                <td>10</td><td>8</td><td>6</td><td>4</td><td>2</td>
+                <td>1</td><td>3</td><td>5</td><td>7</td><td>9</td>
+            </tr>
+            <tr>
+                <td colspan="10">走廊</td>
+            </tr>
+            <tr>
+                <td>10</td><td>8</td><td>6</td><td>4</td><td>2</td>
+                <td>1</td><td>3</td><td>5</td><td>7</td><td>9</td>
+            </tr>
+            <tr>
+                <td>10</td><td>8</td><td>6</td><td>4</td><td>2</td>
+                <td>1</td><td>3</td><td>5</td><td>7</td><td>9</td>
+            </tr>
+            <tr>
+                <td>10</td><td>8</td><td>6</td><td>4</td><td>2</td>
+                <td>1</td><td>3</td><td>5</td><td>7</td><td>9</td>
+            </tr>
+            <tr>
+                <td colspan="10"></td>
+            </tr>
+        </table>
+    </body>
+</html>

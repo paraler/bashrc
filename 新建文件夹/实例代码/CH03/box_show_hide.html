@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Show- Hide</title>
+        <style>
+            div {
+                border-style:    solid;
+                border-width:    1px;
+                width:           100px;
+                height:          30px;
+                text-align:      center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div1">Div 1</div>
+        <div id="div2">Div 2</div>
+        <div id="div3">Div 3</div>
+        <div id="div4">Div 4</div>
+        <hr>
+        <button onclick="div2Hidden()">
+            Div 2 - visibility:hidden
+        </button><br>
+        <button onclick="div2Visible()">
+            Div 2 - visibility:visible
+        </button><hr>
+        <button onclick="div3None()">Div 3 - display:none</button><br>
+        <button onclick="div3Block()">Div 3 - display:block</button>
+        
+        <script>
+            var eleDiv2 = document.getElementById("div2");
+            var eleDiv3 = document.getElementById("div3");
+            function div2Hidden() {
+                eleDiv2.style.visibility= "hidden";
+            }
+            function div2Visible() {
+                eleDiv2.style.visibility= "visible";
+            }
+            function div3None() {
+                eleDiv3.style.display = "none";
+            }
+            function div3Block() {
+                eleDiv3.style.display = "block";
+            }
+        </script>
+    </body>
+</html>

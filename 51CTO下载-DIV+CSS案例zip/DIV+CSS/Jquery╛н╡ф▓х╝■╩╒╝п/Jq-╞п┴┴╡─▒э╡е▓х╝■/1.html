@@ -1,0 +1,239 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD>
+<TITLE>jqueryForm-Download by http://www.codefans.net</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<LINK href="1.files/css.css" type=text/css rel=stylesheet>
+<STYLE type=text/css>
+.list_table_header TD {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 5px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+IMG {
+	CURSOR: pointer
+}
+FORM {
+	PADDING-RIGHT: 0px; DISPLAY: none; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 20px; TEXT-ALIGN: center
+}
+FORM TABLE {
+	TEXT-ALIGN: left
+}
+</STYLE>
+
+<SCRIPT language=javascript src="1.files/jquery.js" type=text/javascript></SCRIPT>
+
+<SCRIPT language=javascript src="1.files/CheckForm.js" type=text/javascript></SCRIPT>
+
+<SCRIPT language=javascript src="1.files/SetSelect.js" type=text/javascript></SCRIPT>
+
+<SCRIPT language=javascript>
+<!--
+if (typeof window.jQuery == "undefined") {
+  alert('ERROR: jQuery JavaScript framework failed.');
+}
+
+//'---DOM载入就绪可以查询及操纵时执行该操作|等同window.load
+//'---确保在<body>元素的onload事件中没有注册函数，否则不会触发$(document).ready()事件
+jQuery(function($) {
+  $('#defaultID').val(defaultID);
+});
+
+
+var success = '操作成功\r\n';
+var fail    = '操作失败\r\n';
+var defaultID = '';
+
+
+//'---删除群组
+function DelGroup(obj, id)
+{
+	if(!id)return;
+
+	if(id == $('#defaultID').val())
+	{//该组为默认组,无法删除！
+		alert(fail + '默认等级无法删除,请重新指定后再删除！');
+		return;
+	}
+
+	var _confirm = '执行操作:' + obj.alt;
+	if(false === confirm( _confirm + '?'))return;
+
+    $.ajax({
+        success: function(data){
+			//alert(data);
+			if( data ){//-1 != date.indexOf(/成功/ig) )
+				//alert( success + _confirm );
+				$('tr').remove('#' + id);
+			}
+			else  
+			alert( fail + _confirm );
+		},
+        url: '#',
+        type: "post"
+    });
+}
+
+//'--添加新群组
+function AddGroup(obj)
+{
+	resetForm(obj);
+
+	$('form').attr({action:'#'});
+}
+
+//'--编辑群组
+function EditGroup(obj, id)
+{
+	if(!id)return;
+
+	resetForm(obj);
+
+	$('#id').val( id );
+	$('#GroupName').val( $('#GroupName' + id).text() );
+	$('#Integral').val ( $('#Integral' + id).text() );
+	$('#Rebate').val   ( $('#Rebate' + id).text() );
+
+	var IsDefault = $('#IsDefault' + id).val();
+	selectRadio('IsDefault', IsDefault);
+//./user.php?action=editGroup
+	$('form').attr({action:'#'});
+}
+
+
+//'---改变默认分组到所有会员
+function UpdateDefault(obj)
+{
+	var disabled = true;
+	if(1 == obj.value)disabled = false;
+	$('#UpdateDefault2User').attr('disabled', disabled);
+	//$("#UpdateDefault2User").removeAttr('disabled');
+}
+
+//'--初始化表单所有状态
+function resetForm(obj)
+{
+	$('form').hide();
+	$('form').resetForm();
+	$('#_form_title').text(obj.alt);
+	$('#UpdateDefault2User').attr('disabled', true);
+	$("form").show('slow');
+}
+
+//-->
+</SCRIPT>
+
+<META content="MSHTML 6.00.2900.3086" name=GENERATOR></HEAD>
+<BODY>
+<TABLE class=nav cellSpacing=0 cellPadding=2 width="100%" align=center 
+  border=0><TBODY>
+  <TR>
+    <TD noWrap width="80%"><IMG 
+      src="1.files/user_suit.gif" 
+      align=absMiddle>&nbsp;用户群组管理</TD>
+    <TD noWrap align=right width="20%"><IMG style="WIDTH: 16px; HEIGHT: 16px" 
+      onclick=javascript:AddGroup(this); alt=添加等级 
+      src="1.files/user_add.gif" 
+      align=absMiddle border=0>&nbsp; <A 
+      href="#"><IMG 
+      alt=创建至此页的快捷方式 
+      src="1.files/page_go.gif" 
+      align=absMiddle border=0></A>&nbsp;&nbsp; </TD></TR></TBODY></TABLE><!--table width="700" border="0" align="center" cellpadding="0" cellspacing="0" class="list_table">
+  <tr class="list_table_header">
+    <td height="23" align="center">没有设定默认等级,请设定！</td>
+  </tr>
+</table-->
+<TABLE class=list_table cellSpacing=0 cellPadding=0 width=700 align=center 
+border=0>
+  <TBODY>
+  <TR class=list_table_header>
+    <TD align=left width="30%" height=23>等级名称</TD>
+    <TD height=23>等级积分</TD>
+    <TD>会员折扣率</TD>
+    <TD>是否默认等级</TD>
+    <TD align=middle height=23>操作</TD></TR>
+
+
+  <TR id=1>
+    <TD id=GroupName1 noWrap height=20>普通会员</TD>
+    <TD id=Integral1 noWrap>1</TD>
+    <TD id=Rebate1 noWrap>1</TD>
+    <TD noWrap>否</TD><INPUT id=IsDefault1 type=hidden value=0> 
+    <TD vAlign=top noWrap align=middle><IMG 
+      onclick="javascript:EditGroup(this, '1');" height=16 alt=编辑等级名称:普通会员 
+      src="1.files/pencil.gif" width=16 
+      align=absMiddle border=0> <IMG onclick="javascript:DelGroup(this, '1');" 
+      height=16 alt=删除等级名称:普通会员 
+      src="1.files/bin_closed.gif" width=16 
+      align=absMiddle border=0> </TD></TR>
+	  
+	   <TR id=2>
+    <TD id=GroupName2 noWrap height=20>高级会员</TD>
+    <TD id=Integral2 noWrap>2</TD>
+    <TD id=Rebate2 noWrap>2</TD>
+    <TD noWrap>是</TD><INPUT id=IsDefault2 type=hidden value=1> 
+    <TD vAlign=top noWrap align=middle><IMG 
+      onclick="javascript:EditGroup(this, '2');" height=16 alt=编辑等级名称:普通会员 
+      src="1.files/pencil.gif" width=16 
+      align=absMiddle border=0> <IMG onclick="javascript:DelGroup(this, '2');" 
+      height=16 alt=删除等级名称:普通会员 
+      src="1.files/bin_closed.gif" width=16 
+      align=absMiddle border=0> </TD></TR>
+
+
+
+	  
+	  </TBODY></TABLE><INPUT id=defaultID 
+type=hidden name=defaultID> <INPUT id=key type=hidden value=0 name=key> 
+<FORM id=_form name=_form onsubmit="return CheckForm(this)" action="" 
+method=post encType=multipart/form-data>
+<TABLE class=form_table cellSpacing=4 cellPadding=0 width=700 align=center 
+border=0>
+  <TBODY>
+  <TR>
+    <TD noWrap height=20><IMG height=16 
+      src="1.files/user_edit.gif" width=16 
+      align=absMiddle>&nbsp;<SPAN id=_form_title></SPAN></TD></TR>
+  <TR>
+    <TD>
+
+
+
+      <TABLE class=form_table_inside cellSpacing=4 cellPadding=0 width="100%" 
+      border=0>
+        <TBODY>
+        <TR>
+          <TD noWrap width="17%" height=20>等级名称:&nbsp;</TD>
+          <TD noWrap width="83%"><INPUT class=form_input id=GroupName 
+            name=GroupName warning="请选择是否为默认等级" check="^\S+$"></TD></TR>
+        <TR>
+          <TD height=20>等级积分:</TD>
+          <TD><INPUT class=form_input id=Integral name=Integral 
+            warning="等级积分不可为空，且必须为大于0的整数" check="Number"></TD></TR>
+        <TR>
+          <TD height=20>会员折扣率:</TD>
+          <TD><INPUT class=form_input id=Rebate name=Rebate 
+            warning="会员折扣率不可为空，且必须为0～100的任意数字" check="Currency"></TD></TR>
+        <TR>
+          <TD height=20>是否默认等级:</TD>
+          <TD><INPUT id=IsDefault1 onclick=javascript:UpdateDefault(this) 
+            type=radio value=1 name=IsDefault warning="" check="^0$"> <LABEL 
+            for=IsDefault1>是</LABEL> <INPUT id=IsDefault0 
+            onclick=javascript:UpdateDefault(this) type=radio CHECKED value=0 
+            name=IsDefault> <LABEL for=IsDefault0>否</LABEL> </TD></TR>
+        <TR>
+          <TD noWrap height=20><INPUT id=id type=hidden name=id> &nbsp;</TD>
+          <TD><INPUT id=UpdateDefault2User disabled type=checkbox 
+            value=checkbox name=UpdateDefault2User> 
+    更新到所有会员</TD></TR>
+	</TBODY>
+	</TABLE>
+	
+
+	
+	</TD></TR>
+  <TR>
+    <TD>&nbsp;&nbsp;<INPUT title=保存 type=image  src="1.files/action_save.gif"  border=0> &nbsp;&nbsp;
+	<IMG onclick="$('form').hide('slow');" alt=关闭 
+      src="1.files/action_stop.gif" 
+      align=absMiddle border=0> </TD></TR></TBODY></TABLE>
+	  </FORM>
+	  </BODY>
+	  </HTML>

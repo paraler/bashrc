@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile 插件</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+    </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet" />      
+    <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0">
+    <!-- windows (mDialog) 系统文件 -->
+    <script src="plugins/windows/js/jqm-windows.mdialog.js"></script>
+    <!-- mDialog:Bar -->
+    <script>
+    $(document).on("tap", "#myDialog", function(){
+        $("<div>").mdialog({
+            popDismissable: false,
+            closeButton:    "right",
+            content:        "文本内容"
+        });
+    });
+    </script>
+</head>
+<body>
+    <div data-role="page" id="mDialogDemo1">
+        <div data-role="header">
+            <h1>Windows (mDialog:Bar)</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <a href="#" id="myDialog" data-role="button">
+                打开对话窗口
+            </a>
+        </div>
+    </div>
+</body>
+</html>

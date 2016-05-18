@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS Selector - attribute</title>
+        <style>
+            div[data-hello^=hello] {
+                font-weight:       bolder;
+            }
+            div[data-hello$=hello] {
+                font-style:        italic;
+            }
+            div[data-hello*=hello] {
+                text-decoration:   underline;
+            }
+        </style>
+    </head>
+    <body>
+        <div data-hello="hello">hello</div>
+        <div data-hello="my_hello">Hello</div>
+        <div data-hello="hello_greeting">Hello</div>
+        <div data-hello="my_hello_greeting">Hello</div>
+    </body>
+</html>

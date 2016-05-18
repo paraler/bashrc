@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile - UI - Listview</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+    </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0">
+    <style>
+        img {
+            width:      100%;
+            height:     auto;
+        }
+    </style>
+</head>
+<body>
+    <div data-role="page" id="home">
+        <div data-role="header">
+            <h1>列表视图</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#beijing" data-transition="slide">
+                        北京</a></li>
+                <li><a href="#shenyang" data-transition="slide">
+                        沈阳</a></li>
+                <li><a href="#suzhou" data-transition="slide">
+                        苏州</a></li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="page" id="beijing">
+        <div data-role="header" data-add-back-btn="true" 
+                data-back-btn-text="返回">
+            <h1>北京</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <div>北京故宫</div>
+            <div>
+                <img src="images/beijing_01.jpg" alt="北京">
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="shenyang">
+        <div data-role="header" data-add-back-btn="true" 
+                data-back-btn-text="返回">
+            <h1>沈阳</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <div>沈阳北陵</div>
+            <div>
+                <img src="images/shenyang_01.jpg" alt="沈阳">
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="suzhou">
+        <div data-role="header" data-add-back-btn="true" 
+                data-back-btn-text="返回">
+            <h1>苏州</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <div>木渎</div>
+            <div>
+                <img src="images/suzhou_01.jpg" alt="苏州">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

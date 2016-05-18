@@ -1,0 +1,17 @@
+/*
+定制图标
+适用于jQuery Mobile 1.4.x
+图标图片选自：IcoMoon - Free
+*/
+
+/* SVG */
+.ui-icon-library:after {
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSI2OCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY4IDY0Ij4KPHBhdGggZD0iTTY0IDYwdi00aC00di0yNGg0di00aC0xMnY0aDR2MjRoLTEydi0yNGg0di00aC0xMnY0aDR2MjRoLTEydi0yNGg0di00aC0xMnY0aDR2MjRoLTEydi0yNGg0di00aC0xMnY0aDR2MjRoLTR2NGgtNHY0aDY4di00aC00eiIgZmlsbD0iIzAwMDAwMCI+PC9wYXRoPgo8cGF0aCBkPSJNMzIgMGg0bDMyIDIwdjRoLTY4di00bDMyLTIweiIgZmlsbD0iIzAwMDAwMCI+PC9wYXRoPgo8L3N2Zz4K");
+    background-size:  14px 14px;
+}
+
+/* PNG */
+.ui-nosvg .ui-icon-library:after {
+	background-image: url("../images_1/icons-png/0034-library.png");
+    background-size:  14px 14px;
+}

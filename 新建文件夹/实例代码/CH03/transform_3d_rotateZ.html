@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>3D Transforms - RotateZ</title>
+        <style>
+            div {
+                width:              150px;
+                height:             100px;
+                background-color:   lightGray;
+                cursor:             pointer;
+            }
+            .rotateZ45 {
+                -webkit-transform:  rotateZ(45deg);
+                transform:          rotateZ(45deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="obj" onclick="back()">CSS三维变换<br>演示</div>
+        <button onclick="rotateZ45()">围绕Z轴转45度</button>
+        <br>
+        <script>
+            var obj = document.getElementById("obj");
+            function back() {
+                obj.className = " ";
+            }
+            function rotateZ45() {
+                obj.className = "rotateZ45";
+            }
+        </script>
+    </body>
+</html>

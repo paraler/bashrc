@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Effects - Basic</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#show").click(function() {
+                $("#n1").show();
+            });
+            $("#hide").click(function() {
+                $("#n1").hide();
+            });
+            $("#toggle").click(function() {
+                $("#n1").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="show">显示</button>
+    <button id="hide">隐藏</button>
+    <button id="toggle">显示/隐藏</button>
+    <hr>
+    <img id="n1" src="images/n1.jpg" alt="n1" width="129" height="60">
+    <img id="n2" src="images/n2.jpg" alt="n2" width="120" height="60">
+</body>
+</html>

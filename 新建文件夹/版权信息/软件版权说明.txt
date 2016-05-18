@@ -1,0 +1,72 @@
+-------------------------------------------
+jQuery / jQuery Mobile
+-------------------------------------------
+MIT许可证        http://en.wikipedia.org/wiki/MIT_License
+
+
+-------------------------------------------
+jQuery Mobile Flat UI Theme
+-------------------------------------------
+WTFPL许可证      http://en.wikipedia.org/wiki/WTFPL
+
+
+-------------------------------------------
+nativeDroid
+-------------------------------------------
+## License & Credits
+
+The nativeDroid-Theme by Raphael Wildhaber is 
+freely available and can be used for private and commercial projects 
+as long as you provide a link back to this website 
+(http://nativedroid.godesign.ch)
+ 
+You may not resell this theme or 
+claim it as your own! (Explanation: You may use this theme in 
+projects for your customers but you may not sell this theme in a 
+marketplace as a template)
+
+If you have any questions or if you are 
+not able to provide a backlink please Contact me.
+
+
+-------------------------------------------
+IcoMoon Free
+-------------------------------------------
+GPL / CC BY 4.0许可证  https://creativecommons.org/licenses/by/4.0/
+
+
+-------------------------------------------
+Font Awesome
+-------------------------------------------
+字体：
+SIL OFL 1.1许可证  http://scripts.sil.org/OFL
+代码：
+MIT许可证          http://opensource.org/licenses/mit-license.html
+文档：
+CC BY 3.0许可证    http://creativecommons.org/licenses/by/3.0/
+
+
+------------------------------------------
+DateBox
+------------------------------------------
+见Datebox-LICENSE.txt
+
+
+------------------------------------------
+jQuery Mobile Windows
+------------------------------------------
+见jQM-windows-LICENSE.txt
+
+
+------------------------------------------
+OWL Carousel
+------------------------------------------
+MIT许可证(2013)
+
+
+------------------------------------------
+Google 地图API
+------------------------------------------
+Google Map API许可证   https://developers.google.com/maps/licensing
+
+

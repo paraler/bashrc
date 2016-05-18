@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>Untitled Document</title>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript"> 
+$(document).ready(function(){
+		
+	$("ul.sidenav li").hover(function() {
+		$(this).find("div").stop()
+		.animate({left: "210", opacity:1}, "fast")
+		.css("display","block")
+
+	}, function() {
+		$(this).find("div").stop()
+		.animate({left: "0", opacity: 0}, "fast")
+	});
+	
+});
+</script>
+<style type="text/css">
+body {
+	background: #005094;
+	font: 10px Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+a:focus {
+	outline: none;
+}
+* {margin: 0; padding: 0;}
+h1 {
+	font: 4.7em normal Georgia, 'Times New Roman', Times, serif;
+	color: #fff;
+	margin-bottom: 20px;
+}
+h1 small{
+	font: 0.2em normal Verdana, Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	letter-spacing: 1.5em;
+	display: block;
+	color: #fff;
+}
+h2 {font: 2em normal Georgia, 'Times New Roman', Times, serif;}
+.container {
+	margin: 0 auto;
+	width: 900px;
+	background: #005094;
+	overflow: hidden;
+	padding: 20px;
+}
+.content {
+	width: 639px;
+	padding: 20px;
+	margin-left: 20px;
+	color: #ddd;
+	font-size: 1.2em;
+	float: left;
+	border-left: 1px dashed #003867;
+}
+.content p {
+	line-height: 1.6em;
+	margin: 5px 0;
+	padding: 5px 0;
+}
+ul.sidenav {
+	float: left;
+	margin: 130px 0 0;
+	padding: 0;
+	width: 200px;
+	list-style: none;
+	border-bottom: 1px solid #3373a9;
+	border-top: 1px solid #003867;
+	font-size: 1.2em;
+}
+ul.sidenav li {
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+ul.sidenav li a{
+	border-top: 1px solid #3373a9;
+	border-bottom: 1px solid #003867;
+	padding: 10px 10px 10px 25px;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	width: 165px;
+	background: #005094 url(sidenav_li_a.gif) no-repeat 5px 10px;
+	position: relative;
+	z-index: 2;
+}
+ul.sidenav li a:hover {
+	background-color: #004c8d;
+	border-top: 1px solid #1a4c76;
+}
+ul.sidenav li div {
+	display: none;
+	position: absolute;
+	top: 2px;
+	left: 0;
+	width: 225px;
+	font-size: 0.9em;
+	background: url(bubble_top.gif) no-repeat right top;
+}
+ul.sidenav li div p {
+	margin: 7px 0;
+	line-height: 1.6em;
+	padding: 0 5px 10px 30px;
+	background: url(bubble_btm.gif) no-repeat right bottom;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <ul class="sidenav">
+    <li> <a href="http://sc.xueit.com">免费模板网</a>
+      <div>
+        <p>sc.xueit.coms</p>
+      </div>
+    </li>
+    <li> <a href="http://sc.xueit.com/css-templates">CSS模板</a>
+      <div>
+        <p>sc.xueit.com</p>
+      </div>
+    </li>
+    <li> <a href="http://sc.xueit.com/admin-templates">后台模板</a>
+      <div>
+        <p>sc.xueit.com</p>
+      </div>
+    </li>
+    <li> <a href="http://sc.xueit.com/icons">图片图标</a>
+      <div>
+        <p>sc.xueit.com</p>
+      </div>
+    </li>
+    <li> <a href="http://sc.xueit.com">CSS菜单</a>
+      <div>
+        <p>sc.xueit.com</p>
+      </div>
+    </li>
+    <li> <a href="http://sc.xueit.com/css-chart">CSS图表</a>
+      <div>
+        <p>sc.xueit.com</p>
+      </div>
+    </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery - 网页动态处理 - attr()</title>
+        <meta charset="utf-8"> 
+        <script src="js/jquery-1.10.1/jquery-1.10.1.min.js" ></script>
+        <script>
+            $(document).ready(function() {
+                $("#one").click(function() {
+                    $("#picture").attr({"src":"images/n1.jpg", "alt":"1"});
+                });
+                $("#two").click(function() {
+                    $("#picture").attr({"src":"images/n2.jpg", "alt":"2"});
+                });
+                $("#currentPicture").click(function() {
+                    alert("当前图片：" + $("#picture").attr("src"));
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button id="currentPicture">当前图片</button>
+        <button id="one">选择图片1</button>
+        <button id="two">选择图片2</button>
+        <hr>
+        <img id="picture" src="images/n1.jpg" alt="1">
+    </body>
+</html>

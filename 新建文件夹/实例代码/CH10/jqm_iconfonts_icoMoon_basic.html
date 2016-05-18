@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile - icon fonts</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+            </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet" />
+    <link href="IconFonts/IcoMoon_custom_download/style.css"
+            rel="stylesheet" />
+    <meta name="viewport" 
+            content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div data-role="page" data-theme="a">
+        <div data-role="header">
+            <h1>Font Awesome</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <form>
+                <a href="#" data-role="button">
+                    <span class="icon-library"></span>
+                    <span>图书馆</span>
+                </a>
+                <a href="#" data-role="button" data-inline="true">
+                    <span class="icon-magic-wand"></span>
+                    <span>魔法棒</span>
+                </a>
+                <fieldset data-role="controlgroup">
+                    <label for="cc-amex">
+                        <span class="icon-cc-amex"></span>&nbsp;Amex
+                    </label>
+                    <input type="radio" name="cc" value="cc-amex" 
+                            id="cc-amex">
+                    <label for="cc-visa">
+                        <span class="icon-cc-visa"></span>&nbsp;Visa
+                    </label>
+                    <input type="radio" name="cc" value="cc-visa" 
+                            id="cc-visa">
+                    <label for="cc-mastercard">
+                        <span class="icon-cc-mastercard"></span>
+                        &nbsp;Mastercard
+                    </label>
+                    <input type="radio" name="cc" value="cc-mastercard" 
+                            id="cc-mastercard">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

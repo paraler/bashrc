@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile - 导航栏</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+    </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0">
+</head>
+<body>
+    <div id="p1" data-role="page">
+        <div data-role="header" data-position="fixed">
+            <h1>导航栏演示</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#p1" class="ui-btn-active ui-state-persist">第一页</a></li>
+                    <li><a href="#p2">第二页</a></li>
+                    <li><a href="#p3">第三页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ui-content" role="main">
+            <div>第一页</div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>页尾</h1>
+        </div>
+    </div>
+    <div id="p2" data-role="page">
+        <div data-role="header" data-position="fixed">
+            <h1>导航栏演示</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#p1">第一页</a></li>
+                    <li><a href="#p2" class="ui-btn-active ui-state-persist">第二页</a></li>
+                    <li><a href="#p3">第三页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ui-content" role="main">
+            <div>第二页</div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>页尾</h1>
+        </div>
+    </div>
+    <div id="p3" data-role="page">
+        <div data-role="header" data-position="fixed">
+            <h1>导航栏演示</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#p1">第一页</a></li>
+                    <li><a href="#p2">第二页</a></li>
+                    <li><a href="#p3" class="ui-btn-active ui-state-persist">第三页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ui-content" role="main">
+            <div>第三页</div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>页尾</h1>
+        </div>
+    </div>
+</body>
+</html>

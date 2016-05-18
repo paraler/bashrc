@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile - AJAX页面加载</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+    </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0">
+</head>
+<body>
+    <div id="home" data-role="page">
+        <div data-role="header" data-add-back-btn="true" 
+                data-back-btn-text="返回">
+            <h1>主页</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <div>默认</div>
+            <a href="jqm_ajax_doc2.html" data-role="button" 
+                    data-mini="true" data-inline="true"
+                    data-transition="slide">
+                按钮：第二页
+            </a>
+            <a href="http://www.tsinghua.edu.cn/" data-role="button" 
+                    data-mini="true" data-inline="true" 
+                    data-transition="slide">
+                清华大学
+            </a>
+            <br>
+            <div>取消AJAX页面加载</div>
+            <a href="jqm_ajax_doc2.html" data-role="button" 
+                    data-mini="true" data-inline="true"
+                    data-transition="slide" data-ajax="false">
+                按钮：第二页
+            </a>
+            <br>
+            <div>标注外部网站</div>
+            <a href="jqm_ajax_doc2.html" data-role="button" 
+                    data-mini="true" data-inline="true"
+                    data-transition="slide" rel="external">
+                按钮：第二页
+            </a>
+        </div>
+        <div data-role="footer">
+            <h6>页尾</h6>
+        </div>
+    </div>
+</body>
+</html>

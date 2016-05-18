@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: skyblue_LLK - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/skyblue_LLK.res" /d "_DEBUG" "E:\VC game Program\成型游戏代码\连连看+外挂\skyblue_LLK\skyblue_LLK.rc"" 
+Creating temporary file "C:\DOCUME~1\skyblue\LOCALS~1\Temp\RSPAD.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/skyblue_LLK.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\VC game Program\成型游戏代码\连连看+外挂\skyblue_LLK\skyblue_LLK.cpp"
+"E:\VC game Program\成型游戏代码\连连看+外挂\skyblue_LLK\skyblue_LLKDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\skyblue\LOCALS~1\Temp\RSPAD.tmp" 
+Creating temporary file "C:\DOCUME~1\skyblue\LOCALS~1\Temp\RSPAE.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/skyblue_LLK.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\VC game Program\成型游戏代码\连连看+外挂\skyblue_LLK\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\skyblue\LOCALS~1\Temp\RSPAE.tmp" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:yes /pdb:"Debug/skyblue_LLK.pdb" /debug /machine:I386 /out:"Debug/skyblue_LLK.exe" /pdbtype:sept  ".\Debug\skyblue_LLK.obj" ".\Debug\skyblue_LLKDlg.obj" ".\Debug\StdAfx.obj" ".\Debug\skyblue_LLK.res" "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+skyblue_LLK.cpp
+skyblue_LLKDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+skyblue_LLK.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

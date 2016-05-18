@@ -1,0 +1,368 @@
+﻿/* ========== 表单Table的样式 ========== */
+table.formtable
+{
+    margin-top:8px;
+    margin-left:8px;
+    border-collapse:collapse;
+    width:96%;
+    }
+table.formtable .tabletitle
+{
+    text-align: left;   
+    background-repeat:repeat-x;
+    color: #2452AC;
+    border: 1px solid #345060;
+    padding:5px;
+    text-align:left;
+    font-weight:bold;
+    font-size:12px;
+    }
+    
+table.formtable .itemtitle, /* 宽度为自适应的table表单的行标题样式 */
+table.formtable .itemtitle2, /* 指定宽度的table表单的行标题为2个字（加一个全角冒号）样式 */
+table.formtable .itemtitle3, /* 指定宽度的table表单的行标题为3个字（加一个全角冒号）样式 */
+table.formtable .itemtitle4, /* 指定宽度的table表单的行标题为4个字（加一个全角冒号）样式 */
+table.formtable .itemtitle5, /* 指定宽度的table表单的行标题为2个字（加一个全角冒号）样式 */
+table.formtable .itemtitle6, /* 指定宽度的table表单的行标题为6个字（加一个全角冒号）样式 */
+table.formtable .itemtitle7, /* 指定宽度的table表单的行标题为7个字（加一个全角冒号）样式 */
+table.formtable .itemtitle8  /* 指定宽度的table表单的行标题为8个字（加一个全角冒号）样式 */
+{
+    border: 1px solid #345060;
+    background-color: #D9E2E9;
+    font-size: 12px;
+    font-weight:bold;
+    text-align: right; 
+    padding:8px 6px 8px 6px;
+    white-space:nowrap;
+    }
+table.formtable .itemtitle2 /* 指定宽度的table表单的行标题为2个字（加一个全角冒号）样式 */
+{
+    width:60px;
+    }
+table.formtable .itemtitle3 /* 指定宽度的table表单的行标题为3个字（加一个全角冒号）样式 */
+{
+    width:70px;
+    }
+table.formtable .itemtitle4 /* 指定宽度的table表单的行标题为4个字（加一个全角冒号）样式 */
+{
+    width:80px;
+    }
+table.formtable .itemtitle5 /* 指定宽度的table表单的行标题为2个字（加一个全角冒号）样式 */
+{
+    width:90px;
+    }
+table.formtable .itemtitle6 /* 指定宽度的table表单的行标题为6个字（加一个全角冒号）样式 */
+{
+    width:100px;
+    }
+table.formtable .itemtitle7 /* 指定宽度的table表单的行标题为7个字（加一个全角冒号）样式 */
+{
+    width:110px;
+    }
+table.formtable .itemtitle8 /* 指定宽度的table表单的行标题为8个字（加一个全角冒号）样式 */
+{
+    width:120px;
+    }
+table.formtable .itemtitle td
+{
+    border:solid 1px #FFF;
+    }
+
+table.formtable .iteminput
+{
+    background-color: #FFF;
+    border: 1px solid #345060;
+    padding:8px 6px;
+    text-align:left;
+    }
+
+table.formtable .formbtnbar
+{
+    border: 1px solid #345060;
+    padding:8px;
+    text-align:center;
+    }
+    
+    
+ /*树样式*/   
+.jm_treelist
+{
+display: inline;
+}
+.jm_treelist a
+{
+color:Blue;
+text-decoration:none;
+}
+.jm_treelist a:hover
+{
+color:red;
+text-decoration:underline;
+}
+.jm_tree_itemleftpad
+{
+width: 16px;
+}
+.jm_tree_item_container{padding-top:2px; font-size:12px;padding-left:8px;}
+.jm_tree_plus{ width: 14px; height:14px; padding:6px;padding-right:10px;}
+.jm_tree_sub{ width: 14px; height:14px; padding:6px;padding-right:10px;}
+.jm_tree_item{width: 14px; height:14px; padding:6px;padding-right:10px;}
+.jm_tree_selected{background-color:Silver;}
+
+.jm_book_tree_sub{background:url(images/jm_tree/book_sub.gif) 0 8px no-repeat;}
+.jm_book_tree_plus{background:url(images/jm_tree/book_plus.gif) 0 8px no-repeat; }
+.jm_book_tree_item{background:url(images/jm_tree/book_item.gif) 0 8px no-repeat; }
+
+
+/*窗口样式*/
+.jm_win{position:absolute;
+        min-width:200px;
+        min-height:60px;
+        font-size:12px;
+        font-family:微软雅黑;
+        border:1px solid white;
+        background-color:rgb(0,128,128); 
+        background:url(images/winbg.png);  
+    padding:4px;
+    overflow:hidden;
+    border-radius:5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0 0 16px black; 
+    -webkit-box-shadow: 0 0 16px black; 
+    -moz-box-shadow: 0 0 16px black;
+     /*filter:alpha(opacity=98);-moz-opacity:0.9;opacity: 0.9;*/
+}
+.jm_win .jm_win_head
+{
+ cursor:move;
+ width:100%;
+}
+/*标题*/
+.jm_win .jm_win_title
+{
+    color:White;
+     font-weight:bolder;
+     font-size:14px;     
+     float:left;
+     padding-left:4px;    
+     text-shadow: 0.2em 0.1em 0.3em #0;
+    -webkit-text-shadow:  0.2em 0.1em 0.3em #0;
+    -moz-text-shadow: 0.2em 0.1em 0.3em #0;
+    cursor:move;
+}
+
+/*失去焦点样式*/
+.jm_win_sub
+{
+    position:absolute;
+    border:1px solid #ccc;
+    background-color:transparent;    
+    filter:alpha(opacity=80);-moz-opacity:0.8;opacity: 0.8;
+}
+
+  /*标题*/
+.jm_win_sub .jm_win_title
+{
+    color:#ccc;   
+}
+
+.jm_win .jm_win_ico
+{
+    width:16px;
+    height:16px;
+    border:0;
+    float:left;
+    margin-left:2px;
+}
+
+.jm_win .jm_win_body
+{
+    position:relative; 
+    word-wrap:break-word;
+    padding:1px 1px 1px 1px;
+    overflow:auto;
+    cursor:default;
+    background-color:#989595; 
+    border:1px solid #999;
+}
+
+/*窗口遮板*/
+.jm_win .jm_win_body_model
+{
+    position:absolute; 
+    left:0;
+    top:0;
+    z-index:10000000;
+    width:100%;
+    height:100%;
+    /*background-color:#000;    
+    filter:alpha(opacity=10);-moz-opacity:0.1;opacity: 0.1;*/
+}
+
+.jm_win_sub.jm_win_body
+{
+    position:relative; 
+    word-wrap:break-word;
+    padding:1px 1px 1px 1px;
+    overflow:auto;
+    cursor:default;
+    background-color:#CECEC9; 
+    border:1px solid #999;
+}
+    
+.jm_win .jm_win_bottom
+{
+    width:100%;
+    text-align:center;
+    padding-top:6px;
+    padding-bottom:6px;
+    }
+.jm_win .jm_win_button
+{
+    height:25px; 
+    border: solid 1px #b6b6b6;
+     background-color:#395DB2; 
+     width:65px;
+     margin-left:8px; 
+     text-decoration:none; 
+     color:#000;
+     }
+
+/*窗口功能区域*/
+.jm_win .jm_win_cmdarea
+{
+    /*background:url(images/cmdbutton.gif);*/
+    width:80px;
+    height:20px;
+    float:right;
+    }
+    
+.jm_win a.cmdbtn
+{
+   background-color:#13c383;
+   color:Black;
+   padding:1px 1px;
+   width:16px;
+    height:16px; 
+    float:right;
+    text-align:center;
+    font-weight:bold; 
+    font-size:12px;
+    cursor:pointer;
+    margin-right:1px;
+    text-decoration:none;    
+    border-radius:2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px; 
+    box-shadow: 0 0 2px black; 
+    -webkit-box-shadow: 0 0 2px black; 
+    -moz-box-shadow: 0 0 2px black;
+    }
+    
+ .jm_win a.cmdbtn:hover{background-color:rgb(251,96,112);}
+ /*关闭按钮*/
+ .jm_win a.close
+{
+    background-color:rgb(176,4,21); 
+    margin-right:6px;   
+    color:#FFF;    
+}
+
+.jm_win a.close:hover
+{
+    background-color:rgb(251,96,112);
+    }
+
+ /*最大化*/   
+.jm_win a.max
+{
+ } 
+ 
+ /*最小化*/
+ .jm_win a.min
+ {
+}
+
+.jm_win_full_div
+{
+    background-color:#AAA;
+    filter:alpha(opacity=60);
+    -moz-opacity:0.6;
+    opacity: 0.6;
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    }
+    
+.jm_win_tooltip
+{
+    border: solid 1px #9D952C; 
+    background-color:#FFEA03;
+    }
+ /*等待*/ 
+ .jm_wait
+    {
+    background:url(images/waitinfo.gif) 0 0 no-repeat;   
+    width:32px;
+    height:32px;
+        }
+
+/*翻页样式*/
+.jm_paging{margin:8px auto 0 auto;padding:4px 4px 4px 8px;}
+a.jm_PageIndexCSS { padding: 2px; padding-left: 4px; padding-right: 4px; background: #fff; border: 1px solid #9AAFE5; text-decoration: none; color: #2452ac; margin-right: 6px; cursor: pointer; }
+a.jm_PageIndexCSS:link { color: #2452ac; text-decoration: none; cursor: pointer; }
+a.jm_PageIndexCSS:visited { color: #2452ac; text-decoration: none; cursor: pointer; }
+a.jm_PageIndexCSS:active { color: #2452ac; text-decoration: underline; cursor: pointer; }
+a.jm_PageIndexCSS:hover { border: 1px solid #2452ac; color: black; text-decoration: underline; cursor: pointer; }
+a.jm_PageCurIndexCSS { padding: 2px; padding-left: 4px; padding-right: 4px; border: 1px solid #2452ac; background-color: #2452ac; text-decoration: none; color: #fff; margin-right: 6px; }
+input.jm_PagerTxt{ width:22px; height:18px; border: 1px solid #9AAFE5; margin:0 3px; padding:0; }
+
+/*菜单*/
+.jm_menu{
+    position:absolute;
+    display:none;
+    z-index:1000000;
+}
+
+/*菜单项*/
+.jm_menu ul
+{
+    list-style: none;  
+    min-width:80px;  
+    margin:0;
+    padding:0;
+    padding:4px 4px;    
+    border:1px solid #fff; 
+    background-color:#fff;
+    filter:alpha(opacity=90);-moz-opacity:0.9;opacity: 0.9; 
+    border-radius:2px;
+    -moz-border-radius: 2px; 
+-webkit-border-radius: 2px;
+ box-shadow: inset 0 0 1px #000;
+     -webkit-box-shadow: inset 0 0 1px #000;
+    -moz-box-shadow: inset 0 0 1px #000;
+}
+
+.jm_menu ul li
+{
+    text-decoration: none;
+    padding: 1px;
+    font-size:12px;
+    color: #2452ac;
+    cursor:pointer;    
+    display:block;
+    line-height:20px;
+    height:20px;    
+    border-top:1px solid #e2e2e2;
+}
+.jm_menu ul li:first-child
+{
+    border-top:none;
+}
+.jm_menu ul li:hover
+{
+    background-color:#ccc;
+}

@@ -1,0 +1,14 @@
+.frame-menu{
+position:relative;overflow:visible;zoom:1;width:970px;height:50px;margin:0 auto;padding:0;background:url(bg-frame.png) no-repeat left top;line-height:1.5;font-size:12px;}
+.frame-menu ul{
+position:absolute;z-index:98;top:7px;left:10px;margin:0;padding:0;}
+.frame-menu ul li{
+float:left;list-style:none outside;width:110px;}
+.frame-menu ul li a:link,.frame-menu ul li a:visited{
+display:block;margin:0;padding:8px 0 0 0;*padding:10px 0 0 0;text-align:center;font-size:13px;font-weight:700;color:#fff;text-decoration:none;}
+.frame-menu ul li a:hover{
+height:109px;*height:107px;color:#AB6A00;background:url(bg-frame.png) no-repeat left -50px;}
+.frame-menu ul li a div{
+display:none;padding:10px 5px 0 5px;margin:0;text-align:left;font-size:12px;font-weight:400;}
+.frame-menu ul li a:hover div.info{
+display:block;color:#fff;}

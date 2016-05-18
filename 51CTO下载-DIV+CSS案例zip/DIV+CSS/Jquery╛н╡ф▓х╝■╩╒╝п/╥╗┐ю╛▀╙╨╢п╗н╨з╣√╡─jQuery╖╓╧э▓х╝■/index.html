@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    
+    <title>Sharing Button Plugin with CSS &amp; jQuery &ndash; Sunflowa Media Web Site</title>
+    
+    </head>
+    
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    
+    <!-- Plugin scripts -->
+    <script src="js/mobilyblocks.js" type="text/javascript"></script>
+
+	<script type="text/javascript">		
+		$(function(){
+		
+		$('.socials').mobilyblocks();
+		
+		$('.nature').mobilyblocks({
+		trigger: 'hover',
+		direction: 'counter',
+		duration: 500,
+		zIndex: 50,
+		widthMultiplier: 1.25
+		});
+		
+		});
+    </script>
+
+    <!-- Site styles -->
+    <link rel="stylesheet" type="text/css" href="css/index.css" media="screen, projection" />
+
+    
+    <style type="text/css">
+	</style>
+	<body>
+		<div id="header">
+                <h1 class="title_name">Sharing Button Plugin with <span>CSS &amp; jQuery</span><small>by Sunflowa Media</small></h1>
+		</div>
+        
+       	<div id="example">
+        
+            <div class="socials">
+                <ul class="reset">
+                    <li><a href="#"><img src="images/socials/delicious.png" alt="" /></a></li>
+                    <li><a href="#"><img src="images/socials/digg.png" alt="" /></a></li>
+                    <li><a href="#"><img src="images/socials/google.png" alt="" /></a></li>
+                    <li><a href="#"><img src="images/socials/stumbleupon.png" alt="" /></a></li>
+                    <li><a href="#"><img src="images/socials/technorati.png" alt="" /></a></li>
+                    <li><a href="#"><img src="images/socials/twitter.png" alt="" /></a></li>
+                </ul>			
+            </div>	
+            
+            <div class="nature">
+                <ul class="reset">
+                    <li><a target="_blank" href="http://baike.baidu.com/view/2889.htm#2_2"><img src="images/onepiece/pic_2.png" alt="" /></a></li>
+                    <li><a target="_blank" href="http://baike.baidu.com/view/2889.htm#2_3"><img src="images/onepiece/pic_3.png" alt="" /></a></li>
+                    <li><a target="_blank" href="http://baike.baidu.com/view/2889.htm#2_5"><img src="images/onepiece/pic_4.png" alt="" /></a></li>
+                    <li><a target="_blank" href="http://baike.baidu.com/view/2889.htm#2_4"><img src="images/onepiece/pic_5.png" alt="" /></a></li>
+                    <li><a target="_blank" href="http://baike.baidu.com/view/2889.htm#2_6"><img src="images/onepiece/pic_6.png" alt="" /></a></li>
+                    <li><a target="_blank" href="http://baike.baidu.com/view/2889.htm#2_7"><img src="images/onepiece/pic_7.png" alt="" /></a></li>
+                    <li><a target="_blank" href="http://baike.baidu.com/view/2889.htm#2_8"><img src="images/onepiece/pic_8.png" alt="" /></a></li>
+                </ul>			
+            </div>	
+        
+        </div>
+            
+    <p class="copy_right">Check out <a href="http://www.sunflowamedia.com/blog/">Sunflowa Media Blog</a> for more tutorials!</p>
+    
+	</body>
+</html>

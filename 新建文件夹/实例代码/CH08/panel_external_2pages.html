@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile - UI - Panel</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+    </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0">
+    <style>
+        .fullWidthImg {
+            width:      100%;
+            height:     auto;
+        }
+    </style>
+    <script>
+        $( document ).on( "pagecreate", function() {
+            $("[data-role='listview']").listview();
+            $("[data-role='panel']").panel();
+        });
+    </script>
+</head>
+<body>
+    <div data-role="page" data-theme="a" id="myPage_1">
+        <div data-role="header" data-position="fixed">
+            <a href="#leftPanel" data-icon="bars" data-iconpos="notext">主菜单</a>
+            <h1>城市旅游</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <img src="images/shenyang_01.jpg" alt="沈阳北陵" 
+                    class="fullWidthImg" />
+            <a href="#myPage_2" data-role="button">前往-->上海</a>
+        </div>
+    </div>
+    <div data-role="page" data-theme="a" id="myPage_2">
+        <div data-role="header" data-position="fixed">
+            <a href="#leftPanel" data-icon="bars" data-iconpos="notext">主菜单</a>
+            <h1>城市旅游</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <img src="images/shanghai_01.jpg" alt="上海科技馆" 
+                    class="fullWidthImg" />
+            <a href="#myPage_1" data-role="button">前往-->沈阳</a>
+        </div>
+    </div>
+    
+    <div data-role="panel" id="leftPanel">
+        <ul data-role="listview" data-inset="false">
+            <li><a href="#">城市简介</a></li>
+            <li><a href="#">主要景点</a></li>
+            <li><a href="#">民俗人文</a></li>
+            <li><a href="#">宾馆酒店</a></li>
+            <li><a href="#">特色小吃</a></li>
+            <li><a href="#">公共交通</a></li>
+            <li><a href="#">铁路</a></li>
+            <li><a href="#">航空</a></li>
+            <li><a href="#">临近城市</a></li>
+        </ul>
+    </div>
+</body>
+</html>

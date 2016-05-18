@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery - 网页动态处理 - html()</title>
+        <meta charset="utf-8" />
+        <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+        <style>
+            img {
+                width:             150px;
+                height:            aoto;
+            }
+            .demoDiv {
+                display:           inline-block; 
+            }
+        </style>
+        <script>
+            $(document).ready(function() {
+                $("#button_copy").click(function() {
+                    var htmlCode = $("#one").html();
+                    $("#two").html(htmlCode);
+                });
+                $("#button_clear").click(function() {
+                    $("#two").html("");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button id="button_copy">复制</button>
+        <button id="button_clear">清除</button>
+        <hr>
+        <div id="one" class="demoDiv">
+            <button> 按钮</button><br>
+            <img src="images/whale_01.jpg" alt="鲸"><br>
+            <div>演示...</div>
+        </div>
+        <div id="two" class="demoDiv">
+        </div>
+    </body>
+</html>

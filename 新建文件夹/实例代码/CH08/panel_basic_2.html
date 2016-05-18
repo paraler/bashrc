@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile - UI - Panel</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+    </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0">
+    <style>
+        .fullWidthImg {
+            width:      100%;
+            height:     auto;
+        }
+    </style>
+</head>
+<body>
+    <div data-role="page" data-theme="a" id="myPage_1">
+        <div data-role="panel" id="myPanel_1" data-position="right" data-display="overlay">
+            <p>面板内容1</p>
+            <p>
+                <a href="#myPage_1" data-rel="close" data-role="button" 
+                        data-inline="true">关闭面板</a>
+            </p>
+        </div>
+        <div data-role="header">
+            <h1>面板</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <img src="images/shenyang_01.jpg" alt="沈阳北陵" 
+                    class="fullWidthImg" />
+            <a href="#myPanel_1" data-role="button" data-inline="true" >
+                    打开/关闭 面板</a>
+        </div>
+    </div>
+</body>
+</html>

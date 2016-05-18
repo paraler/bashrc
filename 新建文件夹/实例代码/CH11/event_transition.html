@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile - Events</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+    </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0">
+    <style>
+        .myImage {
+            width:    100%;
+            height:   auto;
+        }
+    </style>
+    <script>
+        $( document ).on("pagecontainerbeforehide", function(event, data){
+            alert("正在进入：" + data.nextPage.attr('id'));
+        });
+        $( document ).on("pagecontainerbeforeshow", function(event, data){
+            alert("正在离开：" + data.prevPage.attr('id') );
+        });
+    </script>
+</head>
+<body>
+    <div id="home" data-role="page">
+        <div data-role="header" data-add-back-btn="true" 
+                data-back-btn-text="返回">
+            <h1>主页</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <a href="#shenyang" data-role="button" data-mini="true" 
+                    data-inline="true" data-transition="slidedown">
+                沈阳-清昭陵</a>
+        </div>
+    </div>
+    <div id="shenyang" data-role="page">
+        <div data-role="header" data-add-back-btn="true" 
+                data-back-btn-text="返回">
+            <h1>沈阳-清昭陵</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <img src="images/shenyang_01.jpg" class="myImage" alt="清昭陵"
+                    id="img_shenyang">
+        </div>
+    </div>
+</body>
+</html>

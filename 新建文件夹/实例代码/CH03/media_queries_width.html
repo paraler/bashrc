@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Media Queries - 宽度</title>
+        <style>
+            .title {
+                float:       left;
+                min-height:  150px;
+            }
+            @media only screen and (max-width: 600px) {
+                .title>img {
+                    width:            100%;
+                    height:           auto;
+                }
+                .navigation {
+                    clear:            both;
+                }
+                .menu {
+                    background-color: lightGray;
+                }
+            }
+            @media only screen and (min-width: 600px) {
+                .title>img {
+                    max-width:        504px;
+                    height:           auto;
+                }
+                .navigation {
+                    float:            right;
+                }
+                .menu {
+                    background-color: white;
+                    border-bottom:    thick solid gray;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div>加拿大旅游</div>
+            <div>
+                <div class="title">
+                    <img src="images/forest.jpg" alt="森林（Dorset Ontario）">
+                </div>
+                <div class="navigation">
+                    <div class="menu"><a href="#">秋季赏枫</a></div>
+                    <div class="menu">文化古迹</div>
+                    <div class="menu">游乐场</div>
+                    <div class="menu">度假村</div>
+                    <div class="menu">游轮</div>
+                    <div class="menu">文化节</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

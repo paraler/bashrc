@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: skyblue_BoxMan - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/skyblue_BoxMan.res" /d "_DEBUG" "E:\VC game Program\成型游戏代码\推箱子\skyblue_BoxMan\skyblue_BoxMan.rc"" 
+Creating temporary file "C:\DOCUME~1\skyblue\LOCALS~1\Temp\RSP79.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/skyblue_BoxMan.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\VC game Program\成型游戏代码\推箱子\skyblue_BoxMan\BoxMan.cpp"
+"E:\VC game Program\成型游戏代码\推箱子\skyblue_BoxMan\BoxManWnd.cpp"
+"E:\VC game Program\成型游戏代码\推箱子\skyblue_BoxMan\HelpDlg.cpp"
+"E:\VC game Program\成型游戏代码\推箱子\skyblue_BoxMan\MissionLevelDlg.cpp"
+"E:\VC game Program\成型游戏代码\推箱子\skyblue_BoxMan\skyblue_BoxMan.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\skyblue\LOCALS~1\Temp\RSP79.tmp" 
+Creating temporary file "C:\DOCUME~1\skyblue\LOCALS~1\Temp\RSP7A.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/skyblue_BoxMan.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\VC game Program\成型游戏代码\推箱子\skyblue_BoxMan\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\skyblue\LOCALS~1\Temp\RSP7A.tmp" 
+Creating temporary file "C:\DOCUME~1\skyblue\LOCALS~1\Temp\RSP7B.tmp" with contents
+[
+Winmm.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/skyblue_BoxMan.pdb" /debug /machine:I386 /out:"Debug/skyblue_BoxMan.exe" /pdbtype:sept 
+".\Debug\BoxMan.obj"
+".\Debug\BoxManWnd.obj"
+".\Debug\HelpDlg.obj"
+".\Debug\MissionLevelDlg.obj"
+".\Debug\skyblue_BoxMan.obj"
+".\Debug\StdAfx.obj"
+".\Debug\skyblue_BoxMan.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\skyblue\LOCALS~1\Temp\RSP7B.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+BoxMan.cpp
+BoxManWnd.cpp
+HelpDlg.cpp
+MissionLevelDlg.cpp
+skyblue_BoxMan.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+skyblue_BoxMan.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

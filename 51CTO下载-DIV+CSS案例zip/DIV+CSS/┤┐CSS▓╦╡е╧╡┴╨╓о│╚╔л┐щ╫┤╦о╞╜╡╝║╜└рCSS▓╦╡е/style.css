@@ -1,0 +1,62 @@
+/* --------------------------
+AUTHOR : STYLED MENUS
+URL : http://www.styledmenus.com
+Copyrights by STYLED MENUS
+----------------------------*/
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:#fff;
+	color:#666;	
+	font:12px/18px Tahoma, Arial, Helvetica, sans-serif;	
+}
+	#menu{
+		margin:0 auto;
+		width:700px;
+	}
+		#menu ul{
+			list-style:none;
+		}
+			#menu li{
+				list-style:none;
+				display:block;
+				float:left;
+				margin:0 1px;
+			}
+				#menu li a{
+					display:block;
+					float:left;
+					color:#fff;
+					text-transform:uppercase;
+					font-size:11px;
+					font-weight:bold;
+					text-decoration:none;
+					background:url(images/menu_003_bg.jpg) repeat-x;
+					height:173px;
+					line-height:123px;
+					padding:0 25px;				
+				}
+					#menu li a:hover{
+						color:#fff;
+						background:url(images/menu_003_h.jpg) repeat-x;
+						line-height:173px;
+					}
+				#menu li a.current{
+					display:block;
+					float:left;
+					background:url(images/menu_003_h.jpg) repeat-x;					
+					color:#fff;
+					text-transform:uppercase;
+					font-size:11px;
+					font-weight:bold;
+					text-decoration:none;
+					padding:0 25px;
+					line-height:173px;						
+				}
+					#menu li a:hover.current{
+						color:#fff;
+					}
+
+

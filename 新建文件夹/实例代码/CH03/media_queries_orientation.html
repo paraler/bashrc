@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Media Queries - 方向</title>
+        <style>
+            div {
+                width:       200px;
+                min-height:  120px;
+            }
+            @media screen and (orientation: landscape) {
+                .portrait {
+                    display:          none;
+                }
+                .landscape {
+                    display:          block;
+                }
+            }
+            @media screen and (orientation: portrait) {
+                .portrait {
+                    display:          block;
+                }
+                .landscape {
+                    display:          none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="portrait">竖直放置</div>
+        <div class="landscape">水平放置</div>
+    </body>
+</html>

@@ -1,0 +1,440 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\student.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\student.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 student"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "student 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2009",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_STUDENT_DIALOG DIALOGEX 0, 0, 428, 290
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "student"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "Tab1",IDC_TAB,"SysTabControl32",TCS_BUTTONS | 
+                    TCS_FIXEDWIDTH,1,0,423,288
+END
+
+IDD_DIALOG_BANJI DIALOG DISCARDABLE  0, 0, 363, 243
+STYLE WS_CHILD
+FONT 10, "宋体"
+BEGIN
+    COMBOBOX        IDC_COMBO_CLASS,10,53,45,65,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "添   加",IDC_BUTTON_TIANJIA,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,10,82,44,18
+    CONTROL         "修  改",IDC_BUTTON_XIUGAI,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,10,115,44,18
+    CONTROL         "删  除",IDC_BUTTON_DELETE,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,10,148,44,18
+    CONTROL         "用户管理",IDC_BUTTON_MANAGE,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,10,214,44,18
+    CONTROL         "List1",IDC_LIST_CLASS,"SysListView32",LVS_REPORT | 
+                    WS_BORDER,60,7,296,229
+    LTEXT           "班级信息：",IDC_STATIC,10,10,43,10
+    CTEXT           "请选择班级：",IDC_STATIC,9,30,49,13,SS_CENTERIMAGE
+    CONTROL         "导 出",IDC_BUTTON_OUT,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,10,181,44,18
+END
+
+IDD_DIALOG_GENGRU DIALOG DISCARDABLE  0, 0, 225, 125
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+FONT 12, "宋体"
+BEGIN
+    GROUPBOX        "简要说明",IDC_STATIC,141,15,70,97,BS_FLAT
+    LTEXT           "    学生只能查看成绩，不可以对成绩进行改写。如果系统没有你的学生信息，请联系管理者。管理者可以添加学生的信息。登陆时，请看清楚自己是<管理者>还是<学生>。",
+                    IDC_STATIC,143,26,66,83
+    CTEXT           "欢迎使用本系统",IDC_STATIC,22,14,105,13,SS_CENTERIMAGE
+    RTEXT           "登入号码：",IDC_STATIC,18,35,45,12
+    RTEXT           "号码密码：",IDC_STATIC,18,53,45,12
+    EDITTEXT        IDC_DENGRU_HAOMA,66,34,62,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DENGRU_MIMA,66,52,62,12,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         " 管 理 者",IDC_RADIO_LEADER,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,23,71,49,11
+    CONTROL         " 学  生",IDC_RADIO_STUDENT,"Button",BS_AUTORADIOBUTTON,
+                    78,71,49,11
+    PUSHBUTTON      "登  入",IDOK,25,90,46,15
+    PUSHBUTTON      "退  出",IDCANCEL,83,90,46,15
+END
+
+IDD_DIALOG_NIANJI DIALOG DISCARDABLE  0, 0, 364, 256
+STYLE WS_CHILD
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定搜索范围",IDC_BUTTON_GETFING,162,7,55,17
+    COMBOBOX        IDC_COMBO_CHOOSE,221,9,37,70,CBS_DROPDOWN | 
+                    CBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_MIN,282,9,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAX,328,9,24,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "查  询",IDC_BUTTON_CHAXUN,58,7,48,17
+    PUSHBUTTON      "刷  新",IDC_NIANJI_UPDATE,110,7,48,17
+    CTEXT           "统计成绩情况：",IDC_STATIC,8,8,52,15,SS_CENTERIMAGE
+    CONTROL         "List1",IDC_LIST_SUM,"SysListView32",LVS_REPORT | 
+                    WS_BORDER,7,31,350,52
+    CONTROL         "List2",IDC_LIST_ALL,"SysListView32",LVS_REPORT | 
+                    WS_BORDER,7,88,350,161
+    LTEXT           "Min",IDC_STATIC,264,11,13,10
+    LTEXT           "Max",IDC_STATIC,310,10,15,13
+END
+
+IDD_DIALOG_TIANJIA DIALOG DISCARDABLE  0, 0, 200, 218
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "信息数据"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_TIANJIA_XUEHAO,58,12,47,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TIANJIA_XINGMING,58,36,47,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TIANJIA_YUWEN,58,59,47,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TIANJIA_SHUXUE,58,81,47,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TIANJIA_YINGYU,58,104,47,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TIANJIA_WULI,58,127,47,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TIANJIA_HUAXUE,58,149,47,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TIANJIA_SHENGWU,58,171,47,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TIANJIA_TIYU,58,193,47,13,ES_AUTOHSCROLL
+    CONTROL         "  男",IDC_RADIO_MAN,"Button",BS_AUTORADIOBUTTON | 
+                    BS_RIGHT | BS_VCENTER | WS_GROUP,123,29,32,17
+    CONTROL         "  女",IDC_RADIO_WOMAN,"Button",BS_AUTORADIOBUTTON | 
+                    BS_RIGHT | BS_VCENTER,123,55,29,17
+    COMBOBOX        IDC_TIANJIA_BANJI,116,100,67,60,CBS_DROPDOWN | 
+                    WS_TABSTOP
+    CONTROL         "连续输入",IDC_CHECK,"Button",BS_AUTOCHECKBOX | BS_RIGHT,
+                    124,130,45,14
+    PUSHBUTTON      "添  加",IDOK,123,157,56,17,NOT WS_TABSTOP
+    PUSHBUTTON      "取  消",IDCANCEL,123,185,56,17,NOT WS_TABSTOP
+    RTEXT           "学号：",IDC_STATIC,8,12,38,15,SS_CENTERIMAGE
+    RTEXT           "姓名：",IDC_STATIC,8,35,38,15,SS_CENTERIMAGE
+    RTEXT           "语文：",IDC_STATIC,8,58,38,15,SS_CENTERIMAGE
+    RTEXT           "数学：",IDC_STATIC,8,81,38,15,SS_CENTERIMAGE
+    RTEXT           "英语：",IDC_STATIC,8,104,38,15,SS_CENTERIMAGE
+    RTEXT           "物理：",IDC_STATIC,8,127,38,15,SS_CENTERIMAGE
+    RTEXT           "化学：",IDC_STATIC,8,150,38,15,SS_CENTERIMAGE
+    RTEXT           "生物：",IDC_STATIC,8,173,38,15,SS_CENTERIMAGE
+    RTEXT           "体育：",IDC_STATIC,8,196,38,9,SS_CENTERIMAGE
+    GROUPBOX        "性别",IDC_STATIC,115,12,69,67
+    LTEXT           "请输入班级：",IDC_STATIC,117,85,63,13
+END
+
+IDD_DIALOG_CHAXUN DIALOG DISCARDABLE  0, 0, 187, 82
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "查询"
+FONT 10, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_NO,51,17,78,16,ES_AUTOHSCROLL
+    PUSHBUTTON      "查   询",IDOK,24,49,53,17
+    PUSHBUTTON      "退   出",IDCANCEL,97,49,53,17
+    CTEXT           "学号：",IDC_STATIC,26,18,24,14,SS_CENTERIMAGE
+END
+
+IDD_DIALOG_XLS DIALOG DISCARDABLE  0, 0, 144, 69
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "创建EXCEL文档"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT,72,16,55,13,ES_AUTOHSCROLL
+    CTEXT           "请输入文件名：",IDC_STATIC,9,15,57,15,SS_CENTERIMAGE
+    PUSHBUTTON      "确   定",IDOK,23,42,44,13
+    PUSHBUTTON      "取    消",IDCANCEL,79,42,44,13
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "student Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "student\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2009\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "student.EXE\0"
+            VALUE "ProductName", "student 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_STUDENT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+    END
+
+    IDD_DIALOG_BANJI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 356
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 236
+        HORZGUIDE, 185
+    END
+
+    IDD_DIALOG_NIANJI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 357
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 249
+    END
+
+    IDD_DIALOG_TIANJIA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_DIALOG_CHAXUN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+
+    IDD_DIALOG_XLS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 137
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_TIANJIA DLGINIT
+BEGIN
+    IDC_TIANJIA_BANJI, 0x403, 5, 0
+0xbbd2, 0xe0b0, "\000" 
+    IDC_TIANJIA_BANJI, 0x403, 5, 0
+0xfeb6, 0xe0b0, "\000" 
+    IDC_TIANJIA_BANJI, 0x403, 5, 0
+0xfdc8, 0xe0b0, "\000" 
+    0
+END
+
+IDD_DIALOG_BANJI DLGINIT
+BEGIN
+    IDC_COMBO_CLASS, 0x403, 5, 0
+0xbbd2, 0xe0b0, "\000" 
+    IDC_COMBO_CLASS, 0x403, 5, 0
+0xfeb6, 0xe0b0, "\000" 
+    IDC_COMBO_CLASS, 0x403, 5, 0
+0xfdc8, 0xe0b0, "\000" 
+    0
+END
+
+IDD_DIALOG_NIANJI DLGINIT
+BEGIN
+    IDC_COMBO_CHOOSE, 0x403, 5, 0
+0xefd3, 0xc4ce, "\000" 
+    IDC_COMBO_CHOOSE, 0x403, 5, 0
+0xfdca, 0xa7d1, "\000" 
+    IDC_COMBO_CHOOSE, 0x403, 5, 0
+0xa2d3, 0xefd3, "\000" 
+    IDC_COMBO_CHOOSE, 0x403, 5, 0
+0xefce, 0xedc0, "\000" 
+    IDC_COMBO_CHOOSE, 0x403, 5, 0
+0xafbb, 0xa7d1, "\000" 
+    IDC_COMBO_CHOOSE, 0x403, 5, 0
+0xfac9, 0xefce, "\000" 
+    IDC_COMBO_CHOOSE, 0x403, 5, 0
+0xe5cc, 0xfdd3, "\000" 
+    IDC_COMBO_CHOOSE, 0x403, 5, 0
+0xdcd7, 0xd6b7, "\000" 
+    IDC_COMBO_CHOOSE, 0x403, 5, 0
+0xbdc6, 0xf9be, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "菜单"
+    BEGIN
+        MENUITEM "添加",                        IDC_BUTTON_TIANJIA
+        MENUITEM "修改",                        IDC_BUTTON_XIUGAI
+        MENUITEM "删除",                        IDC_BUTTON_DELETE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR  DISCARDABLE     "res\\cursor1.cur"
+IDC_CURSOR2             CURSOR  DISCARDABLE     "res\\cursor2.cur"
+IDC_CURSOR3             CURSOR  DISCARDABLE     "res\\cursor3.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 student(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\student.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

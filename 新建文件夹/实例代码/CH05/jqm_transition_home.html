@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile - AJAX页面加载 - 页面切换动画</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+    </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0">
+</head>
+<body>
+    <div id="home" data-role="page">
+        <div data-role="header" data-add-back-btn="true" 
+                data-back-btn-text="返回">
+            <h1>主页</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <a href="jqm_ajax_doc2.html" data-role="button" 
+                    data-mini="true" data-inline="true"
+                    data-transition="slide">
+                按钮：第二页
+            </a>
+            <a href="jqm_transition_dialog.html" data-role="button" 
+                    data-mini="true" data-inline="true" 
+                    data-transition="pop">
+                按钮：对话窗口
+            </a>
+        </div>
+        <div data-role="footer">
+            <h6>页尾</h6>
+        </div>
+    </div>
+</body>
+</html>

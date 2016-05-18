@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile - icon fonts</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+            </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet" />
+    <link href="IconFonts/font-awesome-4.3.0/css/font-awesome.min.css"
+            rel="stylesheet" />
+    <meta name="viewport" 
+            content="width=device-width, initial-scale=1.0">
+    <style>
+        a > span {
+            margin-left:   3px;
+            margin-right:  3px;
+        }
+    </style>
+</head>
+<body>
+    <div data-role="page" data-theme="a">
+        <div data-role="header">
+            <h1>Font Awesome</h1>
+        </div>
+        <div class="ui-content" role="main">
+            <form>
+                <a href="#" data-role="button">
+                    <span class="fa fa-qrcode"></span>
+                    <span>条形码</span>
+                </a>
+                <a href="#" data-role="button" data-inline="true">
+                    <span class="fa fa-coffee"></span>
+                    <span>咖啡</span>
+                </a>
+                <fieldset data-role="controlgroup">
+                    <label for="cc-amex">
+                        <span class="fa fa-cc-amex"></span>&nbsp;Amex
+                    </label>
+                    <input type="radio" name="cc" value="cc-amex" 
+                            id="cc-amex">
+                    <label for="cc-visa">
+                        <span class="fa fa-cc-visa"></span>&nbsp;Visa
+                    </label>
+                    <input type="radio" name="cc" value="cc-visa" 
+                            id="cc-visa">
+                    <label for="cc-mastercard">
+                        <span class="fa fa-cc-mastercard"></span>
+                        &nbsp;Mastercard
+                    </label>
+                    <input type="radio" name="cc" value="cc-mastercard" 
+                            id="cc-mastercard">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

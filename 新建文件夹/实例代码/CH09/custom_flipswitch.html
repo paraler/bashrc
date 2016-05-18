@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile - UI组件定制</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+    </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0">
+    <style>
+        .ui-flipswitch.ui-corner-all {
+            border-radius:  1em;
+        }
+        html .ui-field-contain>label+.ui-flipswitch {
+            width:          3.4em;
+        }
+        .custom-size-flipswitch.ui-flipswitch.ui-flipswitch-active {
+            padding-left:   1.525em;
+            width:          1.875em;
+        }
+    </style>
+</head>
+<body>
+    <div data-role="page" data-theme="a">
+        <div data-role="header">
+            <h1>圆角开关 </h1>
+        </div>
+        <div class="ui-content" role="main">
+            <form>
+                <div class="ui-field-contain">
+                    <label for="yes_no">功能激活</label>
+                    <input type="checkbox" data-role="flipswitch" 
+                            name="yes_no" id="yes_no"
+                            data-on-text="" data-off-text=""
+                            data-wrapper-class="custom-size-flipswitch">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

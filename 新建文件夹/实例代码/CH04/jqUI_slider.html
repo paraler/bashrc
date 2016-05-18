@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery UI - slider</title>
+        <meta charset="utf-8" />
+        <link href="js/jquery-ui-1.11.1/jquery-ui.min.css" rel="stylesheet">
+        <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+        <script src="js/jquery-ui-1.11.1/jquery-ui.min.js"></script>
+        <script>
+            function scaleImage() {
+                var sliderValue = $( "#scale" ).slider( "value" );
+                $("#info").text(sliderValue);
+                $(".demoImage").css("width", sliderValue);
+            }
+            var sliderOptions = {
+                animate:   "true",
+                min:       100,
+                max:       250,
+                step:      1,
+                value:     175,
+                slide:     scaleImage,
+                change:    scaleImage
+            }
+            $(document).ready(function() {
+                $("#scale").slider(sliderOptions);
+            });
+        </script>
+        <style>
+            #scale {
+                width:     250px;
+            }
+            img.demoImage {
+               width:      175px;
+               height:     auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="scale"></div>
+        <div id="info">175</div>
+        <hr>
+        <img id="whale" src="images/whale_01.jpg" alt="鲸" class="demoImage">
+    </body>
+</html>

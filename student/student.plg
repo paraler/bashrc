@@ -1,0 +1,65 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: student - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\lee\LOCALS~1\Temp\RSP5DD.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/student.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\成绩管理系统3\student\studentDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\lee\LOCALS~1\Temp\RSP5DD.tmp" 
+Creating temporary file "C:\DOCUME~1\lee\LOCALS~1\Temp\RSP5DE.tmp" with contents
+[
+appface.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/student.pdb" /debug /machine:I386 /out:"Debug/student.exe" /pdbtype:sept 
+".\Debug\AccessConn.obj"
+".\Debug\Chaxun.obj"
+".\Debug\CScore.obj"
+".\Debug\DlgBJ.obj"
+".\Debug\DlgDR.obj"
+".\Debug\DlgRealBJ.obj"
+".\Debug\DlgXLS.obj"
+".\Debug\excel.obj"
+".\Debug\MYBUTTON.obj"
+".\Debug\StdAfx.obj"
+".\Debug\student.obj"
+".\Debug\studentDlg.obj"
+".\Debug\TianJiaDlg.obj"
+".\Debug\student.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\lee\LOCALS~1\Temp\RSP5DE.tmp"
+<h3>Output Window</h3>
+Compiling...
+studentDlg.cpp
+f:\成绩管理系统3\student\debug\msado15.tlh(407) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+Linking...
+Creating temporary file "C:\DOCUME~1\lee\LOCALS~1\Temp\RSP5DF.tmp" with contents
+[
+/nologo /o"Debug/student.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\AccessConn.sbr"
+".\Debug\Chaxun.sbr"
+".\Debug\CScore.sbr"
+".\Debug\DlgBJ.sbr"
+".\Debug\DlgDR.sbr"
+".\Debug\DlgRealBJ.sbr"
+".\Debug\DlgXLS.sbr"
+".\Debug\excel.sbr"
+".\Debug\MYBUTTON.sbr"
+".\Debug\student.sbr"
+".\Debug\studentDlg.sbr"
+".\Debug\TianJiaDlg.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\lee\LOCALS~1\Temp\RSP5DF.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+student.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

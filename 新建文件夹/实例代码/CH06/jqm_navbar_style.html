@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Mobile - 导航栏</title>
+    <meta charset="utf-8" />
+    <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js">
+    </script>
+    <link href="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css" 
+            rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0">
+</head>
+<body>
+    <div id="home" data-role="page">
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <h1>导航栏按钮</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#" data-icon="home">主页</a></li>
+                    <li><a href="#" data-icon="shop">购物</a></li>
+                    <li><a href="#" data-icon="user" data-theme="a">用户</a></li>
+                    <li><a href="#" data-icon="search" data-theme="a">搜索</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ui-content" role="main">
+            <div>网页内容</div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>页尾</h1>
+        </div>
+    </div>
+</body>
+</html>

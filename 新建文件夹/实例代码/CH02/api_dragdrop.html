@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5 API - drag / drop</title>
+        <style>
+            .answer {
+                width:            200px;
+                height:           20px;
+                background-color: #EEEEEE;
+            }
+        </style>
+        <script>
+            function allowDrop(event) {
+                event.preventDefault();
+            }
+            function dragStartHandler(event) {
+                event.dataTransfer.setData("myAnswer", event.target.id);
+            }
+            function drop(event) {
+                event.preventDefault();
+                var data=event.dataTransfer.getData("myAnswer");
+                event.target.innerHTML = "";
+                event.target.appendChild(document.getElementById(data));
+            }
+        </script>
+    </head>
+
+    <body>
+        2010年冬季奥运会的举办地点是：
+        <div class="answer" ondrop="drop(event)" 
+                ondragover="allowDrop(event)"></div>
+        <hr>
+        <div id="answer1" ondragstart="dragStartHandler(event)"  
+                draggable="true" class="answer">A. 美国盐湖城</div>
+        <div id="answer2" ondragstart="dragStartHandler(event)"
+                draggable="true" class="answer">B. 意大利都灵</div>
+        <div id="answer3" ondragstart="dragStartHandler(event)"
+                draggable="true" class="answer">C. 加拿大温哥华</div>
+        <div id="answer4" ondragstart="dragStartHandler(event)"
+                draggable="true" class="answer">D. 俄罗斯索契</div>
+    </body>
+</html>

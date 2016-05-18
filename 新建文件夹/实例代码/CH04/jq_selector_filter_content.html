@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery Selector - Content Filter</title>
+        <script src="js/jquery-1.10.1/jquery-1.10.1.min.js"></script>
+        <style>
+            table, td {
+                border:        1px solid black;
+            }
+            td {
+                width:         12em;
+                text-align:    center;
+            }
+        </style>
+        <script>
+            $(document).ready(function() {
+                $( "td:contains('香港')" ).css( "background-color", "lightGreen" );
+                $( "td:empty" ).text( "---" );
+                $( "td:parent" ).css( "border-style","dashed" );
+            });
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td colspan="4">世界都会城市</td>
+            </tr>
+            <tr>
+                <td>纽约</td><td>伦敦</td><td>巴黎</td><td>悉尼</td>
+            </tr>
+            <tr>
+                <td>多伦多</td><td>东京</td><td>法兰克福</td><td>洛杉矶</td>
+            </tr>
+            <tr>
+                <td>北京</td><td>香港特别行政区</td><td>上海</td><td></td>
+            </tr>
+            <tr>
+                <td colspan="4">亚洲都会城市</td>
+            </tr>
+            <tr>
+                <td>北京</td><td>东京</td><td>香港</td><td>曼谷</td>
+            </tr>
+            <tr>
+                <td>上海</td><td>深圳</td><td>雅加达</td><td>大阪</td>
+            </tr>
+            <tr>
+                <td>利雅得</td><td> </td><td> </td><td> </td>
+            </tr>
+        </table>
+    </body>
+</html>
